@@ -4,7 +4,9 @@ import UIKit
 extension Bindable where TargetType: UITabBar {
     var unselectedItemColor: Binder<UIColor> {
         return Binder<UIColor>(self.target) { tabBar, color in
-            tabBar.unselectedItemTintColor = color
+            if #available(iOS 10.0, *) {
+                tabBar.unselectedItemTintColor = color
+            }
         }
     }
 }
