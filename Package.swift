@@ -13,10 +13,8 @@ let package = Package(
     targets: [
         .target(
             name: "Trigger",
-            path: "Trigger"),
         .testTarget(
             name: "TriggerTests",
-            dependencies: ["Trigger"],
-            path: "TriggerTests")
+            dependencies: ["Trigger"])
     ]
 )
