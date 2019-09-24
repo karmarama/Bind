@@ -1,4 +1,4 @@
-#if !os(macOS)
+#if !os(macOS) && !os(tvOS)
 import UIKit
 
 extension Bindable where TargetType: UISwitch {
