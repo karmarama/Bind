@@ -9,63 +9,126 @@
 /* Begin PBXBuildFile section */
 		0014E80F792966285A5A0BD5 /* Bindable+UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */; };
 		01E5833DB935E59214FC2136 /* TriggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */; };
+		09C97810D516C764A809157B /* Trigger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE2FBD83FC521B3DF7C7D58A /* Trigger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A920FECAE068974826139B5 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA90802ED919DAACC99253 /* Trigger.swift */; };
+		0AF92A8DD7524AA8424B0F69 /* Trigger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2FBD83FC521B3DF7C7D58A /* Trigger.framework */; };
 		0B45047050F5C9C35397C4BF /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
 		0CFF86D7A18A5931DA443039 /* Bindable+UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */; };
 		0DA9C3D0F120BD02D2CE2CAF /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA90802ED919DAACC99253 /* Trigger.swift */; };
 		12975D55C4A04954247EDA63 /* Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32482625AD59C787BA656EA9 /* Relay.swift */; };
 		16A74E3909561470C3EABEB3 /* Bindable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */; };
+		16B22C259512A6A4DB492648 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* TestObject.swift */; };
 		195CCADA3A98DB436ED87026 /* Bindable+UIPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9A79B13F8E8757056BC49 /* Bindable+UIPageControl.swift */; };
+		1B34DCB8489C4742C3E741F0 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC86018CB4D8A0C09811160 /* Binder.swift */; };
+		1DB68B189147E165DF6BB137 /* TriggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */; };
+		23ED5475B3FF87CBAF7B1701 /* Trigger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2425FC75B8AD6ADF29DDB687 /* Trigger+Extension.swift */; };
 		28AB432723BFCC656F66C488 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* TestObject.swift */; };
 		2B33B8AA6FB604B75E1038EF /* Bindable+UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942663303E9CBE59E3B4530 /* Bindable+UIControl.swift */; };
+		2B60913E3707890204F2F6DF /* Trigger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0EFACDD491A2047FE3D4814 /* Trigger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D1C7E116D41AC6269445022 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* TestObject.swift */; };
+		324DAEC405E4E996EE0B37E3 /* Bindable+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */; };
+		327ECA48E5FC21CDBE38BF59 /* Bindable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7896317935838D7E5621F /* Bindable+UIButton.swift */; };
 		32E4D37CE5094C0784B059B8 /* Bindable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */; };
 		33DDE4106DE00BFD070D7B17 /* Bindable+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */; };
 		34389F1283B25879C8C6425F /* Bindable+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */; };
 		359FE04CC2D3E4397ACD4A77 /* Bindable+UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6726D9B070B7961E9E60F8 /* Bindable+UINavigationItem.swift */; };
+		381234946AA8A6C9307AC0C9 /* Bindable+UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6726D9B070B7961E9E60F8 /* Bindable+UINavigationItem.swift */; };
 		38A81DFE0B87A791E31218AC /* Bindable+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */; };
+		3B66674593E48058F99877A3 /* Bindable+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */; };
 		3C920A1AEE1B3B4463C573B5 /* Bindable+UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */; };
+		3DCEF812BDE49F45A34EBF54 /* Bindable+UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */; };
 		3DF39D79269B68404056F9F0 /* Bindable+UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6726D9B070B7961E9E60F8 /* Bindable+UINavigationItem.swift */; };
+		4013160F0DA927102E0A4028 /* PrinterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */; };
+		41B2CFF1147DB924DB2F7238 /* Bindable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */; };
+		42DCB57764A902476445A1ED /* TriggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */; };
+		46C05FB016E9D3B8E4BE6186 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
 		49E0D1227B1320BE23158F90 /* Bindable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */; };
+		4A3D96DE7A62AD7FAE8A103A /* Bindable+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */; };
 		51276A88F751D64318F272D8 /* Bindable+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */; };
+		562A94E94F361F6EA44A9834 /* Bindable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */; };
 		5696E9B59A1197EBE815781C /* Bindable+UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3A366761CF271F4BB17DD /* Bindable+UIGestureRecognizer.swift */; };
 		58F2321A905E0CD954B577CC /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC86018CB4D8A0C09811160 /* Binder.swift */; };
 		5BF10602150D7587D257F1D5 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D15DAC79B1AC76785DF873 /* Subscription.swift */; };
+		5DC6E2A746E8EA130007491F /* Bindable+UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942663303E9CBE59E3B4530 /* Bindable+UIControl.swift */; };
 		5E42521AE19CE9F10768CC17 /* Bindable+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */; };
 		5FB376279DC7ECCBB8B0D36A /* Bindable+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */; };
+		62DB1732B2AD881D8D6DD762 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D15DAC79B1AC76785DF873 /* Subscription.swift */; };
 		637549C2D38B6A9E34E3C05E /* Trigger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2425FC75B8AD6ADF29DDB687 /* Trigger+Extension.swift */; };
+		6C89FD65903E3C9BFEFB8566 /* Bindable+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BCBA1C96D1499A2368C6C4 /* Bindable+UIViewController.swift */; };
 		6E66460B09EB276CFC02552F /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC86018CB4D8A0C09811160 /* Binder.swift */; };
+		6F644F4AF6D7A0CEEA35985A /* Bindable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */; };
 		6F853E9E0052D86B01B6F4F3 /* TriggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */; };
+		717B0255BF2FC2896C38FE10 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D15DAC79B1AC76785DF873 /* Subscription.swift */; };
+		733A22C87BFD19E44079AAD2 /* Bindable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7896317935838D7E5621F /* Bindable+UIButton.swift */; };
+		7944093D5AE963218BC63113 /* Bindable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A119B08E34E14B858E97F1 /* Bindable+UIView.swift */; };
 		7C7FA062E2CD362FB1DA5285 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D15DAC79B1AC76785DF873 /* Subscription.swift */; };
+		7E647D9C2C0EF0C371E33400 /* Bindable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */; };
+		803EFBE2121F0F2887A9652B /* Bindable+UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */; };
+		812CDA7052B612388268AA65 /* Bindable+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */; };
+		82A3BE668A9A1F660BD8F9C7 /* Bindable+UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942663303E9CBE59E3B4530 /* Bindable+UIControl.swift */; };
 		8774D75FE1168D2F1D4CE056 /* Bindable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */; };
+		8916D29F0AEF2B864EED6B53 /* Bindable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */; };
 		8A9566D706D206E76327E3DB /* Bindable+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */; };
 		9015E14D3A62FB45789219B3 /* Bindable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */; };
 		9242D8FF64743A5179429422 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
+		9320C85A024298682EE5EB24 /* Bindable+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */; };
 		9A39C0AAE8EEE138E29862EB /* Bindable+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */; };
+		9D059CF3C7783B55F63C17CB /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* TestObject.swift */; };
+		9E3F9C519BDF52F59CEE559D /* Bindable+UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3A366761CF271F4BB17DD /* Bindable+UIGestureRecognizer.swift */; };
 		9F1B1E2534DF633A17B19C3F /* Bindable+UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3A366761CF271F4BB17DD /* Bindable+UIGestureRecognizer.swift */; };
+		9F1C8776143143FE7E7260E2 /* Bindable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */; };
 		9FFA62A970CAE124C1640803 /* Bindable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A119B08E34E14B858E97F1 /* Bindable+UIView.swift */; };
 		A5CF6F52DE7E16472B52DC01 /* Bindable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7896317935838D7E5621F /* Bindable+UIButton.swift */; };
 		A65B3B60DCAD241D17BD8B37 /* Trigger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0165DC94BFE99BD3D3A96707 /* Trigger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8428486B13DF705F151FDD6 /* PrinterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */; };
+		A92EDEB1E9489989D2686951 /* Bindable+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */; };
+		AC6B4BF4F9F90DF28EE1D993 /* Bindable+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */; };
 		AF065688C6FD6F74263EAF52 /* Bindable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A119B08E34E14B858E97F1 /* Bindable+UIView.swift */; };
 		AF0A59D29E51E7C7B3E2D2F4 /* Bindable+UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942663303E9CBE59E3B4530 /* Bindable+UIControl.swift */; };
+		AFD4400353740182A71996D5 /* Bindable+UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3A366761CF271F4BB17DD /* Bindable+UIGestureRecognizer.swift */; };
+		B21C659CC8B497B23933765D /* Bindable+UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */; };
 		B256C1A61CA1781C26FF374F /* Bindable+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */; };
+		B2F17517C02280E124365964 /* Bindable+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BCBA1C96D1499A2368C6C4 /* Bindable+UIViewController.swift */; };
+		B520F71B4AF84422A700BFB7 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA90802ED919DAACC99253 /* Trigger.swift */; };
 		B603ED1DF83FB4467FB9B868 /* Trigger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2425FC75B8AD6ADF29DDB687 /* Trigger+Extension.swift */; };
 		B67C9FC3CB2F4BDC7492C016 /* Bindable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7896317935838D7E5621F /* Bindable+UIButton.swift */; };
+		B8231FC7DF432A62B8B3C94A /* Bindable+UIPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9A79B13F8E8757056BC49 /* Bindable+UIPageControl.swift */; };
+		BCB2A22669C71EE07420860D /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA90802ED919DAACC99253 /* Trigger.swift */; };
 		BE26B215DE2DEF86CEEFD01F /* Bindable+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BCBA1C96D1499A2368C6C4 /* Bindable+UIViewController.swift */; };
+		C550A92F71F622DD916ABFA5 /* Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32482625AD59C787BA656EA9 /* Relay.swift */; };
 		C6FDF7E5361C41F4E100F412 /* Bindable+UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */; };
 		CA52243942CC4D80E4BA7F15 /* Bindable+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BCBA1C96D1499A2368C6C4 /* Bindable+UIViewController.swift */; };
 		CA7A53C664F62B9EC7B2A699 /* Trigger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 573E0E19C014B4EE5106A0F2 /* Trigger.framework */; };
 		CA904F05BE382CC76B44095F /* Bindable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */; };
+		CDFB4A00364647984BE046C8 /* Bindable+UIPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9A79B13F8E8757056BC49 /* Bindable+UIPageControl.swift */; };
+		D1F3181CEA54A07991FFB490 /* Bindable+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */; };
 		D9A6EABC8BFFC9CFA74B6D13 /* Bindable+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */; };
 		DD9CFC9A187ABDA4FB5CF470 /* Bindable+UIPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9A79B13F8E8757056BC49 /* Bindable+UIPageControl.swift */; };
 		DEEB7E76CA6E133DCE59BD82 /* PrinterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */; };
+		E034DB6AE8ABF274E26E6EA0 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC86018CB4D8A0C09811160 /* Binder.swift */; };
+		E3EC35183CE97DB93EF3C03D /* Bindable+UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */; };
+		E574F30A7FB1979681593ED8 /* Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32482625AD59C787BA656EA9 /* Relay.swift */; };
 		E9CB9F4E0E529C66BE9D9E96 /* Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32482625AD59C787BA656EA9 /* Relay.swift */; };
 		F00ADB5F67FDA2285DEE1CFB /* Trigger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 573E0E19C014B4EE5106A0F2 /* Trigger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F37FB2DC1E254424AC2BAE03 /* Trigger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2425FC75B8AD6ADF29DDB687 /* Trigger+Extension.swift */; };
 		F5413A858E91952D871D059C /* Trigger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0165DC94BFE99BD3D3A96707 /* Trigger.framework */; };
+		F5D1EB844669593072D92813 /* Bindable+UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6726D9B070B7961E9E60F8 /* Bindable+UINavigationItem.swift */; };
+		F788AA106AEF18EA67BB2F9F /* Bindable+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */; };
+		F8D680F76C8E320CC2E8867A /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
+		FBB9F4C238F1A766E8DF9417 /* Trigger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EFACDD491A2047FE3D4814 /* Trigger.framework */; };
+		FBF24AD8797A54817F724F1B /* PrinterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */; };
+		FCA3E90C3CF087E74F120579 /* Bindable+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */; };
+		FCAB2DA25CA76485679DD911 /* Bindable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A119B08E34E14B858E97F1 /* Bindable+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		021A87B04739507787C1BF8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56C63F0BCC335BE0DBA6D481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65C41D17DA11C2079E83CE37;
+			remoteInfo = Trigger_watchOS;
+		};
 		1E84A582B05C2A6FA350FBBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 56C63F0BCC335BE0DBA6D481 /* Project object */;
@@ -79,6 +142,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 741338EC7820921882B999AA;
 			remoteInfo = Trigger_iOS;
+		};
+		E0073BACA465D18C9A9FCE25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56C63F0BCC335BE0DBA6D481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBD293BB0FD6077C3660463B;
+			remoteInfo = Trigger_tvOS;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -105,6 +175,28 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BEB61564024974C3E143AAA0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2B60913E3707890204F2F6DF /* Trigger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7AEDA3C2D526B3CFC3A52B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09C97810D516C764A809157B /* Trigger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +214,7 @@
 		32482625AD59C787BA656EA9 /* Relay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relay.swift; sourceTree = "<group>"; };
 		3DDA90802ED919DAACC99253 /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
 		4942663303E9CBE59E3B4530 /* Bindable+UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIControl.swift"; sourceTree = "<group>"; };
+		528A8BC5BC105E09FB2A15EC /* TriggerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TriggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		573E0E19C014B4EE5106A0F2 /* Trigger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Trigger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterMock.swift; sourceTree = "<group>"; };
 		66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UISwitch.swift"; sourceTree = "<group>"; };
@@ -129,8 +222,10 @@
 		87BCBA1C96D1499A2368C6C4 /* Bindable+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIViewController.swift"; sourceTree = "<group>"; };
 		8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIImageView.swift"; sourceTree = "<group>"; };
 		91D93EE6FE99882FF6B5A4E3 /* TriggerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TriggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0EFACDD491A2047FE3D4814 /* Trigger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Trigger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC86018CB4D8A0C09811160 /* Binder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
 		B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UISegmentedControl.swift"; sourceTree = "<group>"; };
+		B2381BE056DBA63EB6356D5C /* TriggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F7896317935838D7E5621F /* Bindable+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIButton.swift"; sourceTree = "<group>"; };
 		B4A119B08E34E14B858E97F1 /* Bindable+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIView.swift"; sourceTree = "<group>"; };
 		B5D15DAC79B1AC76785DF873 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
@@ -138,6 +233,7 @@
 		E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UITabBarController.swift"; sourceTree = "<group>"; };
 		F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerTests.swift; sourceTree = "<group>"; };
 		FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		FE2FBD83FC521B3DF7C7D58A /* Trigger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Trigger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +242,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5413A858E91952D871D059C /* Trigger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74145061C75CDBBA870D736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB9F4C238F1A766E8DF9417 /* Trigger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D58B709CD96238821FEFE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF92A8DD7524AA8424B0F69 /* Trigger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,8 +353,12 @@
 			children = (
 				573E0E19C014B4EE5106A0F2 /* Trigger.framework */,
 				0165DC94BFE99BD3D3A96707 /* Trigger.framework */,
+				FE2FBD83FC521B3DF7C7D58A /* Trigger.framework */,
+				A0EFACDD491A2047FE3D4814 /* Trigger.framework */,
 				91D93EE6FE99882FF6B5A4E3 /* TriggerTests.xctest */,
 				1D43A8B1E435FD4D1A2E97F9 /* TriggerTests.xctest */,
+				528A8BC5BC105E09FB2A15EC /* TriggerTests.xctest */,
+				B2381BE056DBA63EB6356D5C /* TriggerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,6 +384,39 @@
 			productReference = 1D43A8B1E435FD4D1A2E97F9 /* TriggerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2627FD999CE9AF28D02E403D /* TriggerTests_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBF8436987A3C11E02120404 /* Build configuration list for PBXNativeTarget "TriggerTests_tvOS" */;
+			buildPhases = (
+				EB98845C1137B74AFC7B60F2 /* Sources */,
+				C9D58B709CD96238821FEFE6 /* Frameworks */,
+				EE7AEDA3C2D526B3CFC3A52B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A890615F603262CE01AE5DB2 /* PBXTargetDependency */,
+			);
+			name = TriggerTests_tvOS;
+			productName = TriggerTests_tvOS;
+			productReference = 528A8BC5BC105E09FB2A15EC /* TriggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65C41D17DA11C2079E83CE37 /* Trigger_watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CC0B9A3919ACD1F571B2BD9 /* Build configuration list for PBXNativeTarget "Trigger_watchOS" */;
+			buildPhases = (
+				DC06B4AD4D937357639D76B6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trigger_watchOS;
+			productName = Trigger_watchOS;
+			productReference = A0EFACDD491A2047FE3D4814 /* Trigger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		741338EC7820921882B999AA /* Trigger_iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 066016ECB25C1A9984BCDFA9 /* Build configuration list for PBXNativeTarget "Trigger_iOS" */;
@@ -281,6 +430,39 @@
 			name = Trigger_iOS;
 			productName = Trigger_iOS;
 			productReference = 573E0E19C014B4EE5106A0F2 /* Trigger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7EA0613068A023B6FD8B384D /* TriggerTests_watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0AD7FD5D7D722CD50AD7D1D /* Build configuration list for PBXNativeTarget "TriggerTests_watchOS" */;
+			buildPhases = (
+				7CEBE9377A9FDA028E60D918 /* Sources */,
+				C74145061C75CDBBA870D736 /* Frameworks */,
+				BEB61564024974C3E143AAA0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6378D2573E7EC557761A32C5 /* PBXTargetDependency */,
+			);
+			name = TriggerTests_watchOS;
+			productName = TriggerTests_watchOS;
+			productReference = B2381BE056DBA63EB6356D5C /* TriggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBD293BB0FD6077C3660463B /* Trigger_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ECBF332D78BD409EB9D2C28 /* Build configuration list for PBXNativeTarget "Trigger_tvOS" */;
+			buildPhases = (
+				2AE00070F5487DFCC7BF5667 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trigger_tvOS;
+			productName = Trigger_tvOS;
+			productReference = FE2FBD83FC521B3DF7C7D58A /* Trigger.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D4C95B095EB6D7C3F1E64735 /* Trigger_macOS */ = {
@@ -337,8 +519,12 @@
 			targets = (
 				D4E99A1B3BF66490B4918380 /* TriggerTests_iOS */,
 				0A00C05B8AD9EFBF6396608B /* TriggerTests_macOS */,
+				2627FD999CE9AF28D02E403D /* TriggerTests_tvOS */,
+				7EA0613068A023B6FD8B384D /* TriggerTests_watchOS */,
 				741338EC7820921882B999AA /* Trigger_iOS */,
 				D4C95B095EB6D7C3F1E64735 /* Trigger_macOS */,
+				CBD293BB0FD6077C3660463B /* Trigger_tvOS */,
+				65C41D17DA11C2079E83CE37 /* Trigger_watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -353,6 +539,34 @@
 				637549C2D38B6A9E34E3C05E /* Trigger+Extension.swift in Sources */,
 				01E5833DB935E59214FC2136 /* TriggerTests.swift in Sources */,
 				9242D8FF64743A5179429422 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE00070F5487DFCC7BF5667 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92EDEB1E9489989D2686951 /* Bindable+NSLayoutConstraint.swift in Sources */,
+				F788AA106AEF18EA67BB2F9F /* Bindable+UIActivityIndicatorView.swift in Sources */,
+				327ECA48E5FC21CDBE38BF59 /* Bindable+UIButton.swift in Sources */,
+				82A3BE668A9A1F660BD8F9C7 /* Bindable+UIControl.swift in Sources */,
+				9E3F9C519BDF52F59CEE559D /* Bindable+UIGestureRecognizer.swift in Sources */,
+				7E647D9C2C0EF0C371E33400 /* Bindable+UIImageView.swift in Sources */,
+				8916D29F0AEF2B864EED6B53 /* Bindable+UILabel.swift in Sources */,
+				F5D1EB844669593072D92813 /* Bindable+UINavigationItem.swift in Sources */,
+				B8231FC7DF432A62B8B3C94A /* Bindable+UIPageControl.swift in Sources */,
+				3B66674593E48058F99877A3 /* Bindable+UISearchBar.swift in Sources */,
+				324DAEC405E4E996EE0B37E3 /* Bindable+UISegmentedControl.swift in Sources */,
+				D1F3181CEA54A07991FFB490 /* Bindable+UISwitch.swift in Sources */,
+				803EFBE2121F0F2887A9652B /* Bindable+UITabBar.swift in Sources */,
+				B21C659CC8B497B23933765D /* Bindable+UITabBarController.swift in Sources */,
+				6F644F4AF6D7A0CEEA35985A /* Bindable+UITextField.swift in Sources */,
+				FCAB2DA25CA76485679DD911 /* Bindable+UIView.swift in Sources */,
+				6C89FD65903E3C9BFEFB8566 /* Bindable+UIViewController.swift in Sources */,
+				E034DB6AE8ABF274E26E6EA0 /* Binder.swift in Sources */,
+				C550A92F71F622DD916ABFA5 /* Relay.swift in Sources */,
+				62DB1732B2AD881D8D6DD762 /* Subscription.swift in Sources */,
+				BCB2A22669C71EE07420860D /* Trigger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +598,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7CEBE9377A9FDA028E60D918 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4013160F0DA927102E0A4028 /* PrinterMock.swift in Sources */,
+				16B22C259512A6A4DB492648 /* TestObject.swift in Sources */,
+				F37FB2DC1E254424AC2BAE03 /* Trigger+Extension.swift in Sources */,
+				1DB68B189147E165DF6BB137 /* TriggerTests.swift in Sources */,
+				F8D680F76C8E320CC2E8867A /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD3696A03623CB324058E3D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,6 +638,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC06B4AD4D937357639D76B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3D96DE7A62AD7FAE8A103A /* Bindable+NSLayoutConstraint.swift in Sources */,
+				9320C85A024298682EE5EB24 /* Bindable+UIActivityIndicatorView.swift in Sources */,
+				733A22C87BFD19E44079AAD2 /* Bindable+UIButton.swift in Sources */,
+				5DC6E2A746E8EA130007491F /* Bindable+UIControl.swift in Sources */,
+				AFD4400353740182A71996D5 /* Bindable+UIGestureRecognizer.swift in Sources */,
+				9F1C8776143143FE7E7260E2 /* Bindable+UIImageView.swift in Sources */,
+				41B2CFF1147DB924DB2F7238 /* Bindable+UILabel.swift in Sources */,
+				381234946AA8A6C9307AC0C9 /* Bindable+UINavigationItem.swift in Sources */,
+				CDFB4A00364647984BE046C8 /* Bindable+UIPageControl.swift in Sources */,
+				FCA3E90C3CF087E74F120579 /* Bindable+UISearchBar.swift in Sources */,
+				AC6B4BF4F9F90DF28EE1D993 /* Bindable+UISegmentedControl.swift in Sources */,
+				812CDA7052B612388268AA65 /* Bindable+UISwitch.swift in Sources */,
+				3DCEF812BDE49F45A34EBF54 /* Bindable+UITabBar.swift in Sources */,
+				E3EC35183CE97DB93EF3C03D /* Bindable+UITabBarController.swift in Sources */,
+				562A94E94F361F6EA44A9834 /* Bindable+UITextField.swift in Sources */,
+				7944093D5AE963218BC63113 /* Bindable+UIView.swift in Sources */,
+				B2F17517C02280E124365964 /* Bindable+UIViewController.swift in Sources */,
+				1B34DCB8489C4742C3E741F0 /* Binder.swift in Sources */,
+				E574F30A7FB1979681593ED8 /* Relay.swift in Sources */,
+				717B0255BF2FC2896C38FE10 /* Subscription.swift in Sources */,
+				B520F71B4AF84422A700BFB7 /* Trigger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5CD73A38E31B9F9B4850E4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,6 +678,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB98845C1137B74AFC7B60F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF24AD8797A54817F724F1B /* PrinterMock.swift in Sources */,
+				9D059CF3C7783B55F63C17CB /* TestObject.swift in Sources */,
+				23ED5475B3FF87CBAF7B1701 /* Trigger+Extension.swift in Sources */,
+				42DCB57764A902476445A1ED /* TriggerTests.swift in Sources */,
+				46C05FB016E9D3B8E4BE6186 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -432,10 +698,20 @@
 			target = D4C95B095EB6D7C3F1E64735 /* Trigger_macOS */;
 			targetProxy = 1E84A582B05C2A6FA350FBBC /* PBXContainerItemProxy */;
 		};
+		6378D2573E7EC557761A32C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65C41D17DA11C2079E83CE37 /* Trigger_watchOS */;
+			targetProxy = 021A87B04739507787C1BF8D /* PBXContainerItemProxy */;
+		};
 		79688FD050FE700DE1111EA9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 741338EC7820921882B999AA /* Trigger_iOS */;
 			targetProxy = 30A43DF452647C734FAA4116 /* PBXContainerItemProxy */;
+		};
+		A890615F603262CE01AE5DB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBD293BB0FD6077C3660463B /* Trigger_tvOS */;
+			targetProxy = E0073BACA465D18C9A9FCE25 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -462,6 +738,41 @@
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
+		};
+		1746FF085E31832CC4F9B88D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-watchOS";
+				PRODUCT_NAME = Trigger;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		39EA3CB78096A72A05C740BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.TriggerTests-tvOS";
+				PRODUCT_NAME = TriggerTests;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
 		};
 		4D73607E5AAD0A67871AC99A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -534,8 +845,54 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
+		};
+		6CEA400285446E4D891D0164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-tvOS";
+				PRODUCT_NAME = Trigger;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		7228E5D92C67728FDD1580FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-watchOS";
+				PRODUCT_NAME = Trigger;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
 		};
 		7591182AD03135A0F2C79184 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -549,6 +906,43 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		87F37A08C319B7C67315782D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.TriggerTests-watchOS";
+				PRODUCT_NAME = TriggerTests;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		8B0FCE5677C3A736B592EADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-tvOS";
+				PRODUCT_NAME = Trigger;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
 		};
 		8D020D6BAC5A8F868E63876A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -583,6 +977,33 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		97E1A85B595EC8BFC9B62219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.TriggerTests-watchOS";
+				PRODUCT_NAME = TriggerTests;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		AEFBBBCD897535612548539C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.TriggerTests-tvOS";
+				PRODUCT_NAME = TriggerTests;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
 		};
@@ -636,6 +1057,7 @@
 				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -719,6 +1141,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		9CC0B9A3919ACD1F571B2BD9 /* Build configuration list for PBXNativeTarget "Trigger_watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1746FF085E31832CC4F9B88D /* Debug */,
+				7228E5D92C67728FDD1580FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		9ECBF332D78BD409EB9D2C28 /* Build configuration list for PBXNativeTarget "Trigger_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CEA400285446E4D891D0164 /* Debug */,
+				8B0FCE5677C3A736B592EADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
 		9EFAAA9C50F1813C278BBD8A /* Build configuration list for PBXNativeTarget "Trigger_macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -737,11 +1177,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "";
 		};
+		DBF8436987A3C11E02120404 /* Build configuration list for PBXNativeTarget "TriggerTests_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39EA3CB78096A72A05C740BD /* Debug */,
+				AEFBBBCD897535612548539C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
 		DF70CCA57351C7887D683BDC /* Build configuration list for PBXNativeTarget "TriggerTests_macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D73607E5AAD0A67871AC99A /* Debug */,
 				8D020D6BAC5A8F868E63876A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		F0AD7FD5D7D722CD50AD7D1D /* Build configuration list for PBXNativeTarget "TriggerTests_watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97E1A85B595EC8BFC9B62219 /* Debug */,
+				87F37A08C319B7C67315782D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "";
