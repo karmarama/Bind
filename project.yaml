@@ -1,0 +1,33 @@
+name: Trigger
+options:
+  bundleIdPrefix: com.karmarama
+  deploymentTarget:
+    iOS: 10.0
+    macOS: '10.10'
+    tvOS: 10.0
+  indentWidth: 2
+  tabWidth: 2
+  usesTabs: false
+targets:
+  Trigger:
+    platform: [macOS, iOS]
+    settings:
+      ENABLE_BITCODE: false
+      FRAMEWORK_SEARCH_PATHS: $(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks
+      SWIFT_VERSION: 5.0
+    scheme:
+      testTargets: ['TriggerTests_${platform}']
+    sources: [Sources]
+    type: framework
+  TriggerTests:
+    dependencies: [{target: 'Trigger_${platform}'}]
+    platform: [macOS, iOS]
+    settings:
+      SWIFT_VERSION: 5.0
+    sources:
+      - path: Tests
+        excludes:
+          - LinuxMain.swift
+          - '**/__Fixtures__'
+          - '**/__Snapshots__/SnapshotTestingTests'
+    type: bundle.unit-test
