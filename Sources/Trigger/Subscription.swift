@@ -30,6 +30,8 @@ extension Subscription: Hashable {
 
 public final class SubscriptionContainer {
   private var container: [Subscription] = []
+
+  public init() {}
   
   public func append(_ element: Subscription) {
     container.append(element)
