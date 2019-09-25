@@ -13,8 +13,7 @@ targets:
   Trigger:
     platform: [macOS, iOS, tvOS, watchOS]
     settings:
-      ENABLE_BITCODE: false
-      FRAMEWORK_SEARCH_PATHS: $(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks
+      ENABLE_BITCODE: true
       SWIFT_VERSION: 5.0
     scheme:
       testTargets: ['TriggerTests_${platform}']
