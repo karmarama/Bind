@@ -40,7 +40,7 @@ public class Trigger<Value>: Unbindable {
     }
   }
   
-  @discardableResult func bind(to binder: Binder<Value>) -> Subscription {
+  @discardableResult public func bind(to binder: Binder<Value>) -> Subscription {
     return bind(binder.on)
   }
   
@@ -50,7 +50,7 @@ public class Trigger<Value>: Unbindable {
     }
   }
   
-  @discardableResult func bind(_ closure: @escaping (Value) -> Void) -> Subscription {
+  @discardableResult public func bind(_ closure: @escaping (Value) -> Void) -> Subscription {
     let subscription = Subscription(uuid: UUID(), unbinder: self)
     observers[subscription] = closure
     
