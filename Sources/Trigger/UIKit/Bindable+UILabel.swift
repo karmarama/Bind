@@ -1,7 +1,7 @@
 #if !os(macOS) && !os(watchOS)
 import UIKit
 
-extension Bindable where TargetType: UILabel {
+public extension Bindable where TargetType: UILabel {
     var text: Binder<String> {
         return Binder<String>(self.target) { label, text in
             label.text = text

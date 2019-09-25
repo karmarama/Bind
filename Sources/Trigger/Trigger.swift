@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: - Core
-class Trigger<Value>: Unbindable {
+public class Trigger<Value>: Unbindable {
     private struct Printer: Printable {
         func print(_ value: String) {
             Swift.print(value)
@@ -74,17 +74,17 @@ class Trigger<Value>: Unbindable {
         return self
     }
 
-    func unbind(for subscription: Subscription) {
+    public func unbind(for subscription: Subscription) {
         observers[subscription] = nil
     }
 }
 
-protocol Printable {
+public protocol Printable {
     func print(_ value: String)
 }
 
 // MARK: - Functional extensions
-extension Trigger {
+public extension Trigger {
     static func combine(_ trigger1: Trigger<Value>, _ trigger2: Trigger<Value>) -> Trigger<(Value, Value)> {
         let trigger = Trigger<(Value, Value)>()
 
@@ -174,7 +174,7 @@ extension Trigger {
 }
 
 // MARK: - Typed extensions
-extension Trigger where Value == Bool {
+public extension Trigger where Value == Bool {
     func invert() {
         guard let currentValue = value else {
             return

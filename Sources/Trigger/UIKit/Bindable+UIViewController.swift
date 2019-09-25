@@ -1,9 +1,9 @@
 #if !os(macOS) && !os(watchOS)
 import UIKit
 
-extension UIViewController: BindableCompatible {}
+public extension UIViewController: BindableCompatible {}
 
-extension Bindable where TargetType: UIViewController {
+public extension Bindable where TargetType: UIViewController {
     var title: Binder<String> {
         return Binder<String>(self.target) { viewController, title in
             viewController.title = title

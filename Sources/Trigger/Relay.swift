@@ -1,6 +1,6 @@
 import Foundation
 
-final class Relay: Trigger<Void> {
+public final class Relay: Trigger<Void> {
     func fire() {
         update(withValue: ())
     }

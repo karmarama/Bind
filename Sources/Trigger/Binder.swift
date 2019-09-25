@@ -1,6 +1,6 @@
 import Foundation
 
-struct Binder<Value> {
+public struct Binder<Value> {
     private let _binding: (Value) -> Void
     init<Target: AnyObject>(_ target: Target,
                             binding: @escaping (Target, Value) -> Void) {
@@ -16,24 +16,24 @@ struct Binder<Value> {
     }
 }
 
-struct Bindable<TargetType> {
+public struct Bindable<TargetType> {
     let target: TargetType
     init(_ target: TargetType) {
         self.target = target
     }
 }
 
-protocol BindableCompatible {
+public protocol BindableCompatible {
     associatedtype CompatibleType
     var binding: Bindable<CompatibleType> { get }
 }
 
-extension BindableCompatible {
+public extension BindableCompatible {
     var binding: Bindable<Self> {
         return Bindable(self)
     }
 }
 
-protocol Unbindable: AnyObject {
+public protocol Unbindable: AnyObject {
     func unbind(for subscription: Subscription)
 }

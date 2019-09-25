@@ -15,6 +15,10 @@
 		0B45047050F5C9C35397C4BF /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
 		0CFF86D7A18A5931DA443039 /* Bindable+UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */; };
 		0DA9C3D0F120BD02D2CE2CAF /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA90802ED919DAACC99253 /* Trigger.swift */; };
+		0EB23071233B7C1700C5B7CB /* Bindable+WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB23070233B7C1700C5B7CB /* Bindable+WKWebView.swift */; };
+		0EB23072233B7C1700C5B7CB /* Bindable+WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB23070233B7C1700C5B7CB /* Bindable+WKWebView.swift */; };
+		0EB23073233B7C1700C5B7CB /* Bindable+WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB23070233B7C1700C5B7CB /* Bindable+WKWebView.swift */; };
+		0EB23074233B7C1700C5B7CB /* Bindable+WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB23070233B7C1700C5B7CB /* Bindable+WKWebView.swift */; };
 		12975D55C4A04954247EDA63 /* Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32482625AD59C787BA656EA9 /* Relay.swift */; };
 		16A74E3909561470C3EABEB3 /* Bindable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */; };
 		16B22C259512A6A4DB492648 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* TestObject.swift */; };
@@ -203,6 +207,7 @@
 		0165DC94BFE99BD3D3A96707 /* Trigger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Trigger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UITextField.swift"; sourceTree = "<group>"; };
 		07C9A79B13F8E8757056BC49 /* Bindable+UIPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIPageControl.swift"; sourceTree = "<group>"; };
+		0EB23070233B7C1700C5B7CB /* Bindable+WKWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Bindable+WKWebView.swift"; path = "../../../../ios-edf/EDF/EDF/Util/Binding/Bindable Extensions/UIKit/Bindable+WKWebView.swift"; sourceTree = "<group>"; };
 		0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UISearchBar.swift"; sourceTree = "<group>"; };
 		0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
@@ -307,6 +312,7 @@
 				0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */,
 				B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */,
 				66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */,
+				0EB23070233B7C1700C5B7CB /* Bindable+WKWebView.swift */,
 				1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */,
 				E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */,
 				027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */,
@@ -564,6 +570,7 @@
 				FCAB2DA25CA76485679DD911 /* Bindable+UIView.swift in Sources */,
 				6C89FD65903E3C9BFEFB8566 /* Bindable+UIViewController.swift in Sources */,
 				E034DB6AE8ABF274E26E6EA0 /* Binder.swift in Sources */,
+				0EB23073233B7C1700C5B7CB /* Bindable+WKWebView.swift in Sources */,
 				C550A92F71F622DD916ABFA5 /* Relay.swift in Sources */,
 				62DB1732B2AD881D8D6DD762 /* Subscription.swift in Sources */,
 				BCB2A22669C71EE07420860D /* Trigger.swift in Sources */,
@@ -592,6 +599,7 @@
 				9FFA62A970CAE124C1640803 /* Bindable+UIView.swift in Sources */,
 				CA52243942CC4D80E4BA7F15 /* Bindable+UIViewController.swift in Sources */,
 				6E66460B09EB276CFC02552F /* Binder.swift in Sources */,
+				0EB23071233B7C1700C5B7CB /* Bindable+WKWebView.swift in Sources */,
 				12975D55C4A04954247EDA63 /* Relay.swift in Sources */,
 				7C7FA062E2CD362FB1DA5285 /* Subscription.swift in Sources */,
 				0A920FECAE068974826139B5 /* Trigger.swift in Sources */,
@@ -632,6 +640,7 @@
 				AF065688C6FD6F74263EAF52 /* Bindable+UIView.swift in Sources */,
 				BE26B215DE2DEF86CEEFD01F /* Bindable+UIViewController.swift in Sources */,
 				58F2321A905E0CD954B577CC /* Binder.swift in Sources */,
+				0EB23072233B7C1700C5B7CB /* Bindable+WKWebView.swift in Sources */,
 				E9CB9F4E0E529C66BE9D9E96 /* Relay.swift in Sources */,
 				5BF10602150D7587D257F1D5 /* Subscription.swift in Sources */,
 				0DA9C3D0F120BD02D2CE2CAF /* Trigger.swift in Sources */,
@@ -660,6 +669,7 @@
 				7944093D5AE963218BC63113 /* Bindable+UIView.swift in Sources */,
 				B2F17517C02280E124365964 /* Bindable+UIViewController.swift in Sources */,
 				1B34DCB8489C4742C3E741F0 /* Binder.swift in Sources */,
+				0EB23074233B7C1700C5B7CB /* Bindable+WKWebView.swift in Sources */,
 				E574F30A7FB1979681593ED8 /* Relay.swift in Sources */,
 				717B0255BF2FC2896C38FE10 /* Subscription.swift in Sources */,
 				B520F71B4AF84422A700BFB7 /* Trigger.swift in Sources */,

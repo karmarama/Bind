@@ -1,7 +1,7 @@
 #if !os(macOS) && !os(watchOS)
 import UIKit
 
-extension Bindable where TargetType: UISegmentedControl {
+public extension Bindable where TargetType: UISegmentedControl {
     var selectedIndex: Binder<Int> {
         return Binder<Int>(self.target) { segmentedControl, index in
             segmentedControl.selectedSegmentIndex = index

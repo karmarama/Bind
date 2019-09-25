@@ -2,7 +2,7 @@ import XCTest
 
 @testable import Trigger
 
-final class TriggerTests: XCTestCase {
+public final class TriggerTests: XCTestCase {
     func testInitialNoValue() {
           let trigger = Trigger<String>()
           trigger.bind { _ in

@@ -1,6 +1,6 @@
 import Foundation
 
-final class Subscription {
+public final class Subscription {
     fileprivate let uuid: UUID
     fileprivate weak var unbinder: Unbindable?
 
@@ -19,16 +19,16 @@ final class Subscription {
 }
 
 extension Subscription: Hashable {
-    static func == (lhs: Subscription, rhs: Subscription) -> Bool {
+   public static func == (lhs: Subscription, rhs: Subscription) -> Bool {
         return lhs.uuid == rhs.uuid
     }
 
-    func hash(into hasher: inout Hasher) {
+    public func hash(into hasher: inout Hasher) {
         return uuid.hash(into: &hasher)
     }
 }
 
-final class SubscriptionContainer {
+public final class SubscriptionContainer {
     private var container: [Subscription] = []
 
     func append(_ element: Subscription) {

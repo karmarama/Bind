@@ -1,7 +1,7 @@
 #if !os(macOS) && !os(watchOS)
 import UIKit
 
-extension Bindable where TargetType: UIButton {
+public extension Bindable where TargetType: UIButton {
     func title(for state: UIControl.State = .normal) -> Binder<String> {
         return Binder<String>(self.target) { button, title in
             button.setTitle(title, for: state)

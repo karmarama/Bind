@@ -1,7 +1,7 @@
 #if !os(macOS) && !os(watchOS)
 import UIKit
 
-extension Bindable where TargetType: UIControl {
+public extension Bindable where TargetType: UIControl {
 
     var isSelected: Binder<Bool> {
         return Binder<Bool>(self.target) { control, isSelected in
