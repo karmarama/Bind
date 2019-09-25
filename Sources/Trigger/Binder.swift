@@ -17,7 +17,7 @@ public struct Binder<Value> {
 }
 
 public struct Bindable<TargetType> {
-  let target: TargetType
+  public let target: TargetType
   public init(_ target: TargetType) {
     self.target = target
   }
