@@ -1,7 +1,7 @@
 #if !os(macOS) && !os(watchOS)
 import UIKit
 
-public extension NSLayoutConstraint: BindableCompatible {}
+extension NSLayoutConstraint: BindableCompatible {}
 
 public extension Bindable where TargetType: NSLayoutConstraint {
     var isActive: Binder<Bool> {

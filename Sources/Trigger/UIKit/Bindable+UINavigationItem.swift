@@ -1,7 +1,7 @@
 #if !os(macOS) && !os(watchOS)
 import UIKit
 
-public extension UINavigationItem: BindableCompatible {}
+extension UINavigationItem: BindableCompatible {}
 
 public extension Bindable where TargetType: UINavigationItem {
     var title: Binder<String> {

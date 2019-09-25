@@ -1,7 +1,7 @@
 #if !os(macOS) && !os(watchOS)
 import UIKit
 
-public extension UIView: BindableCompatible {}
+extension UIView: BindableCompatible {}
 
 public extension Bindable where TargetType: UIView {
     var isHidden: Binder<Bool> {

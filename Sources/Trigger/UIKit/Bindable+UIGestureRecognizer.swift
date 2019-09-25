@@ -1,7 +1,7 @@
 #if !os(macOS) && !os(watchOS)
 import UIKit
 
-public extension UIGestureRecognizer: BindableCompatible {}
+extension UIGestureRecognizer: BindableCompatible {}
 
 public extension Bindable where TargetType: UIGestureRecognizer {
     var isEnabled: Binder<Bool> {
