@@ -1,4 +1,4 @@
-@testable import Trigger
+@testable import Bind
 
 final class PrinterMock: Printable {
   var printValues: [String] = []

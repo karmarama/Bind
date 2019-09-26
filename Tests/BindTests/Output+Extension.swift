@@ -1,5 +1,4 @@
-import Foundation
-@testable import Trigger
+@testable import Bind
 
 extension Output {
   var latest: Value? {

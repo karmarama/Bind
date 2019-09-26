@@ -1,5 +1,5 @@
 import Foundation
-@testable import Trigger
+@testable import Bind
 
 class TestObject: BindableCompatible {
   var text: String?

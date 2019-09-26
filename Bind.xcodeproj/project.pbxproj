@@ -293,7 +293,7 @@
 		46786E68047562EAE2054B15 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				EF9A5E0E64D40EF1055B650C /* TriggerTests */,
+				EF9A5E0E64D40EF1055B650C /* BindTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -344,7 +344,7 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		EF9A5E0E64D40EF1055B650C /* TriggerTests */ = {
+		EF9A5E0E64D40EF1055B650C /* BindTests */ = {
 			isa = PBXGroup;
 			children = (
 				643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */,
@@ -353,7 +353,7 @@
 				F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */,
 				0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */,
 			);
-			path = TriggerTests;
+			path = BindTests;
 			sourceTree = "<group>";
 		};
 		F8A4B71E618469AE8D34DC6C /* Products */ = {
@@ -747,7 +747,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Bind-iOS";
 				PRODUCT_NAME = Bind;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -771,7 +771,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Bind-watchOS";
 				PRODUCT_NAME = Bind;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -866,7 +866,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
@@ -900,7 +900,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Bind-tvOS";
 				PRODUCT_NAME = Bind;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -924,7 +924,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Bind-watchOS";
 				PRODUCT_NAME = Bind;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -991,7 +991,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Bind-tvOS";
 				PRODUCT_NAME = Bind;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -1041,7 +1041,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Bind-macOS";
 				PRODUCT_NAME = Bind;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1130,7 +1130,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "";
 				"OTHER_CFLAGS[arch=*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1183,7 +1183,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Bind-macOS";
 				PRODUCT_NAME = Bind;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1210,7 +1210,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Bind-iOS";
 				PRODUCT_NAME = Bind;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

@@ -1,6 +1,6 @@
 import XCTest
 
-@testable import Trigger
+@testable import Bind
 
 final class OutputTests: XCTestCase {
   func testInitialNoValue() {
@@ -189,17 +189,17 @@ final class OutputTests: XCTestCase {
     
     XCTAssertEqual(printer.printValues.count, 3)
     XCTAssertEqual(printer.printValues[0], "---")
-    XCTAssertEqual(printer.printValues[1], "Binding 123 (Trigger<Bool>) to (Function)")
-    XCTAssertEqual(printer.printValues[2], "To bindings: [Trigger.Subscription: (Function)]")
+    XCTAssertEqual(printer.printValues[1], "Binding 123 (Output<Bool>) to (Function)")
+    XCTAssertEqual(printer.printValues[2], "To bindings: [Bind.Subscription: (Function)]")
     
     output1.update(withValue: false)
     
     XCTAssertEqual(printer.printValues.count, 8)
     XCTAssertEqual(printer.printValues[3], "---")
-    XCTAssertEqual(printer.printValues[4], "Will update value for 123 (Trigger<Bool>) to false")
-    XCTAssertEqual(printer.printValues[5], "To bindings: [Trigger.Subscription: (Function)]")
-    XCTAssertEqual(printer.printValues[6], "Did update value for 123 (Trigger<Bool>) to false")
-    XCTAssertEqual(printer.printValues[7], "To bindings: [Trigger.Subscription: (Function)]")
+    XCTAssertEqual(printer.printValues[4], "Will update value for 123 (Output<Bool>) to false")
+    XCTAssertEqual(printer.printValues[5], "To bindings: [Bind.Subscription: (Function)]")
+    XCTAssertEqual(printer.printValues[6], "Did update value for 123 (Output<Bool>) to false")
+    XCTAssertEqual(printer.printValues[7], "To bindings: [Bind.Subscription: (Function)]")
   }
   
   static var allTests = [
