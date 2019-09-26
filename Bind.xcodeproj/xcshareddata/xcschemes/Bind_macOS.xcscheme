@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4C95B095EB6D7C3F1E64735"
                BuildableName = "Trigger.framework"
-               BlueprintName = "Trigger_macOS"
-               ReferencedContainer = "container:Trigger.xcodeproj">
+               BlueprintName = "Bind_macOS"
+               ReferencedContainer = "container:Bind.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,6 +27,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D4C95B095EB6D7C3F1E64735"
+            BuildableName = "Trigger.framework"
+            BlueprintName = "Bind_macOS"
+            ReferencedContainer = "container:Bind.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -34,26 +43,11 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A00C05B8AD9EFBF6396608B"
                BuildableName = "TriggerTests.xctest"
-               BlueprintName = "TriggerTests_macOS"
-               ReferencedContainer = "container:Trigger.xcodeproj">
+               BlueprintName = "BindTests_macOS"
+               ReferencedContainer = "container:Bind.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4C95B095EB6D7C3F1E64735"
-            BuildableName = "Trigger.framework"
-            BlueprintName = "Trigger_macOS"
-            ReferencedContainer = "container:Trigger.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <CommandLineArguments>
-      </CommandLineArguments>
-      <AdditionalOptions>
-      </AdditionalOptions>
-      <CodeCoverageTargets>
-      </CodeCoverageTargets>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -70,14 +64,10 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4C95B095EB6D7C3F1E64735"
             BuildableName = "Trigger.framework"
-            BlueprintName = "Trigger_macOS"
-            ReferencedContainer = "container:Trigger.xcodeproj">
+            BlueprintName = "Bind_macOS"
+            ReferencedContainer = "container:Bind.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <CommandLineArguments>
-      </CommandLineArguments>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -91,12 +81,10 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4C95B095EB6D7C3F1E64735"
             BuildableName = "Trigger.framework"
-            BlueprintName = "Trigger_macOS"
-            ReferencedContainer = "container:Trigger.xcodeproj">
+            BlueprintName = "Bind_macOS"
+            ReferencedContainer = "container:Bind.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-      </CommandLineArguments>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

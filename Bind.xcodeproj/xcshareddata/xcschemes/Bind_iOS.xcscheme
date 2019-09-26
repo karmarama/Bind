@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "65C41D17DA11C2079E83CE37"
+               BlueprintIdentifier = "741338EC7820921882B999AA"
                BuildableName = "Trigger.framework"
-               BlueprintName = "Trigger_watchOS"
-               ReferencedContainer = "container:Trigger.xcodeproj">
+               BlueprintName = "Bind_iOS"
+               ReferencedContainer = "container:Bind.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,33 +27,27 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "741338EC7820921882B999AA"
+            BuildableName = "Trigger.framework"
+            BlueprintName = "Bind_iOS"
+            ReferencedContainer = "container:Bind.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7EA0613068A023B6FD8B384D"
+               BlueprintIdentifier = "D4E99A1B3BF66490B4918380"
                BuildableName = "TriggerTests.xctest"
-               BlueprintName = "TriggerTests_watchOS"
-               ReferencedContainer = "container:Trigger.xcodeproj">
+               BlueprintName = "BindTests_iOS"
+               ReferencedContainer = "container:Bind.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65C41D17DA11C2079E83CE37"
-            BuildableName = "Trigger.framework"
-            BlueprintName = "Trigger_watchOS"
-            ReferencedContainer = "container:Trigger.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <CommandLineArguments>
-      </CommandLineArguments>
-      <AdditionalOptions>
-      </AdditionalOptions>
-      <CodeCoverageTargets>
-      </CodeCoverageTargets>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -68,16 +62,12 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65C41D17DA11C2079E83CE37"
+            BlueprintIdentifier = "741338EC7820921882B999AA"
             BuildableName = "Trigger.framework"
-            BlueprintName = "Trigger_watchOS"
-            ReferencedContainer = "container:Trigger.xcodeproj">
+            BlueprintName = "Bind_iOS"
+            ReferencedContainer = "container:Bind.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <CommandLineArguments>
-      </CommandLineArguments>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -89,14 +79,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65C41D17DA11C2079E83CE37"
+            BlueprintIdentifier = "741338EC7820921882B999AA"
             BuildableName = "Trigger.framework"
-            BlueprintName = "Trigger_watchOS"
-            ReferencedContainer = "container:Trigger.xcodeproj">
+            BlueprintName = "Bind_iOS"
+            ReferencedContainer = "container:Bind.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-      </CommandLineArguments>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

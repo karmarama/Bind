@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		0014E80F792966285A5A0BD5 /* Bindable+UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */; };
 		01E5833DB935E59214FC2136 /* TriggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */; };
-		09C97810D516C764A809157B /* Trigger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE2FBD83FC521B3DF7C7D58A /* Trigger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09C97810D516C764A809157B /* Bind.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE2FBD83FC521B3DF7C7D58A /* Bind.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A920FECAE068974826139B5 /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA90802ED919DAACC99253 /* Output.swift */; };
-		0AF92A8DD7524AA8424B0F69 /* Trigger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2FBD83FC521B3DF7C7D58A /* Trigger.framework */; };
+		0AF92A8DD7524AA8424B0F69 /* Bind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2FBD83FC521B3DF7C7D58A /* Bind.framework */; };
 		0B45047050F5C9C35397C4BF /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
 		0CFF86D7A18A5931DA443039 /* Bindable+UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */; };
 		0DA9C3D0F120BD02D2CE2CAF /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA90802ED919DAACC99253 /* Output.swift */; };
@@ -28,7 +28,7 @@
 		23ED5475B3FF87CBAF7B1701 /* Output+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2425FC75B8AD6ADF29DDB687 /* Output+Extension.swift */; };
 		28AB432723BFCC656F66C488 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* TestObject.swift */; };
 		2B33B8AA6FB604B75E1038EF /* Bindable+UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942663303E9CBE59E3B4530 /* Bindable+UIControl.swift */; };
-		2B60913E3707890204F2F6DF /* Trigger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0EFACDD491A2047FE3D4814 /* Trigger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B60913E3707890204F2F6DF /* Bind.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0EFACDD491A2047FE3D4814 /* Bind.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D1C7E116D41AC6269445022 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* TestObject.swift */; };
 		324DAEC405E4E996EE0B37E3 /* Bindable+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */; };
 		327ECA48E5FC21CDBE38BF59 /* Bindable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7896317935838D7E5621F /* Bindable+UIButton.swift */; };
@@ -83,7 +83,7 @@
 		9F1C8776143143FE7E7260E2 /* Bindable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */; };
 		9FFA62A970CAE124C1640803 /* Bindable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A119B08E34E14B858E97F1 /* Bindable+UIView.swift */; };
 		A5CF6F52DE7E16472B52DC01 /* Bindable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7896317935838D7E5621F /* Bindable+UIButton.swift */; };
-		A65B3B60DCAD241D17BD8B37 /* Trigger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0165DC94BFE99BD3D3A96707 /* Trigger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A65B3B60DCAD241D17BD8B37 /* Bind.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0165DC94BFE99BD3D3A96707 /* Bind.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8428486B13DF705F151FDD6 /* PrinterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */; };
 		A92EDEB1E9489989D2686951 /* Bindable+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */; };
 		AC6B4BF4F9F90DF28EE1D993 /* Bindable+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */; };
@@ -102,7 +102,7 @@
 		C550A92F71F622DD916ABFA5 /* Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32482625AD59C787BA656EA9 /* Relay.swift */; };
 		C6FDF7E5361C41F4E100F412 /* Bindable+UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */; };
 		CA52243942CC4D80E4BA7F15 /* Bindable+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BCBA1C96D1499A2368C6C4 /* Bindable+UIViewController.swift */; };
-		CA7A53C664F62B9EC7B2A699 /* Trigger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 573E0E19C014B4EE5106A0F2 /* Trigger.framework */; };
+		CA7A53C664F62B9EC7B2A699 /* Bind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 573E0E19C014B4EE5106A0F2 /* Bind.framework */; };
 		CA904F05BE382CC76B44095F /* Bindable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */; };
 		CDFB4A00364647984BE046C8 /* Bindable+UIPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9A79B13F8E8757056BC49 /* Bindable+UIPageControl.swift */; };
 		D1F3181CEA54A07991FFB490 /* Bindable+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */; };
@@ -113,13 +113,13 @@
 		E3EC35183CE97DB93EF3C03D /* Bindable+UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */; };
 		E574F30A7FB1979681593ED8 /* Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32482625AD59C787BA656EA9 /* Relay.swift */; };
 		E9CB9F4E0E529C66BE9D9E96 /* Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32482625AD59C787BA656EA9 /* Relay.swift */; };
-		F00ADB5F67FDA2285DEE1CFB /* Trigger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 573E0E19C014B4EE5106A0F2 /* Trigger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F00ADB5F67FDA2285DEE1CFB /* Bind.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 573E0E19C014B4EE5106A0F2 /* Bind.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F37FB2DC1E254424AC2BAE03 /* Output+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2425FC75B8AD6ADF29DDB687 /* Output+Extension.swift */; };
-		F5413A858E91952D871D059C /* Trigger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0165DC94BFE99BD3D3A96707 /* Trigger.framework */; };
+		F5413A858E91952D871D059C /* Bind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0165DC94BFE99BD3D3A96707 /* Bind.framework */; };
 		F5D1EB844669593072D92813 /* Bindable+UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6726D9B070B7961E9E60F8 /* Bindable+UINavigationItem.swift */; };
 		F788AA106AEF18EA67BB2F9F /* Bindable+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */; };
 		F8D680F76C8E320CC2E8867A /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
-		FBB9F4C238F1A766E8DF9417 /* Trigger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EFACDD491A2047FE3D4814 /* Trigger.framework */; };
+		FBB9F4C238F1A766E8DF9417 /* Bind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EFACDD491A2047FE3D4814 /* Bind.framework */; };
 		FBF24AD8797A54817F724F1B /* PrinterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */; };
 		FCA3E90C3CF087E74F120579 /* Bindable+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */; };
 		FCAB2DA25CA76485679DD911 /* Bindable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A119B08E34E14B858E97F1 /* Bindable+UIView.swift */; };
@@ -163,7 +163,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A65B3B60DCAD241D17BD8B37 /* Trigger.framework in Embed Frameworks */,
+				A65B3B60DCAD241D17BD8B37 /* Bind.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,7 +174,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F00ADB5F67FDA2285DEE1CFB /* Trigger.framework in Embed Frameworks */,
+				F00ADB5F67FDA2285DEE1CFB /* Bind.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +185,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2B60913E3707890204F2F6DF /* Trigger.framework in Embed Frameworks */,
+				2B60913E3707890204F2F6DF /* Bind.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +196,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				09C97810D516C764A809157B /* Trigger.framework in Embed Frameworks */,
+				09C97810D516C764A809157B /* Bind.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +204,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0165DC94BFE99BD3D3A96707 /* Trigger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Trigger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0165DC94BFE99BD3D3A96707 /* Bind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UITextField.swift"; sourceTree = "<group>"; };
 		07C9A79B13F8E8757056BC49 /* Bindable+UIPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIPageControl.swift"; sourceTree = "<group>"; };
 		0EB23075233B801500C5B7CB /* Bindable+WKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+WKWebView.swift"; sourceTree = "<group>"; };
@@ -213,25 +213,25 @@
 		0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
 		1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UITabBar.swift"; sourceTree = "<group>"; };
-		1D43A8B1E435FD4D1A2E97F9 /* TriggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D43A8B1E435FD4D1A2E97F9 /* BindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6726D9B070B7961E9E60F8 /* Bindable+UINavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UINavigationItem.swift"; sourceTree = "<group>"; };
 		1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UILabel.swift"; sourceTree = "<group>"; };
 		2425FC75B8AD6ADF29DDB687 /* Output+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Output+Extension.swift"; sourceTree = "<group>"; };
 		32482625AD59C787BA656EA9 /* Relay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relay.swift; sourceTree = "<group>"; };
 		3DDA90802ED919DAACC99253 /* Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
 		4942663303E9CBE59E3B4530 /* Bindable+UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIControl.swift"; sourceTree = "<group>"; };
-		528A8BC5BC105E09FB2A15EC /* TriggerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TriggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		573E0E19C014B4EE5106A0F2 /* Trigger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Trigger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		528A8BC5BC105E09FB2A15EC /* BindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		573E0E19C014B4EE5106A0F2 /* Bind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterMock.swift; sourceTree = "<group>"; };
 		66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UISwitch.swift"; sourceTree = "<group>"; };
 		6CC3A366761CF271F4BB17DD /* Bindable+UIGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIGestureRecognizer.swift"; sourceTree = "<group>"; };
 		87BCBA1C96D1499A2368C6C4 /* Bindable+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIViewController.swift"; sourceTree = "<group>"; };
 		8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIImageView.swift"; sourceTree = "<group>"; };
-		91D93EE6FE99882FF6B5A4E3 /* TriggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0EFACDD491A2047FE3D4814 /* Trigger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Trigger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91D93EE6FE99882FF6B5A4E3 /* BindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0EFACDD491A2047FE3D4814 /* Bind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC86018CB4D8A0C09811160 /* Binder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
 		B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UISegmentedControl.swift"; sourceTree = "<group>"; };
-		B2381BE056DBA63EB6356D5C /* TriggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2381BE056DBA63EB6356D5C /* BindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F7896317935838D7E5621F /* Bindable+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIButton.swift"; sourceTree = "<group>"; };
 		B4A119B08E34E14B858E97F1 /* Bindable+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIView.swift"; sourceTree = "<group>"; };
 		B5D15DAC79B1AC76785DF873 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
@@ -239,7 +239,7 @@
 		E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UITabBarController.swift"; sourceTree = "<group>"; };
 		F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerTests.swift; sourceTree = "<group>"; };
 		FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
-		FE2FBD83FC521B3DF7C7D58A /* Trigger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Trigger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE2FBD83FC521B3DF7C7D58A /* Bind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,7 +247,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5413A858E91952D871D059C /* Trigger.framework in Frameworks */,
+				F5413A858E91952D871D059C /* Bind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +255,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBB9F4C238F1A766E8DF9417 /* Trigger.framework in Frameworks */,
+				FBB9F4C238F1A766E8DF9417 /* Bind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +263,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF92A8DD7524AA8424B0F69 /* Trigger.framework in Frameworks */,
+				0AF92A8DD7524AA8424B0F69 /* Bind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +271,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7A53C664F62B9EC7B2A699 /* Trigger.framework in Frameworks */,
+				CA7A53C664F62B9EC7B2A699 /* Bind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,14 +359,14 @@
 		F8A4B71E618469AE8D34DC6C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				573E0E19C014B4EE5106A0F2 /* Trigger.framework */,
-				0165DC94BFE99BD3D3A96707 /* Trigger.framework */,
-				FE2FBD83FC521B3DF7C7D58A /* Trigger.framework */,
-				A0EFACDD491A2047FE3D4814 /* Trigger.framework */,
-				91D93EE6FE99882FF6B5A4E3 /* TriggerTests.xctest */,
-				1D43A8B1E435FD4D1A2E97F9 /* TriggerTests.xctest */,
-				528A8BC5BC105E09FB2A15EC /* TriggerTests.xctest */,
-				B2381BE056DBA63EB6356D5C /* TriggerTests.xctest */,
+				573E0E19C014B4EE5106A0F2 /* Bind.framework */,
+				0165DC94BFE99BD3D3A96707 /* Bind.framework */,
+				FE2FBD83FC521B3DF7C7D58A /* Bind.framework */,
+				A0EFACDD491A2047FE3D4814 /* Bind.framework */,
+				91D93EE6FE99882FF6B5A4E3 /* BindTests.xctest */,
+				1D43A8B1E435FD4D1A2E97F9 /* BindTests.xctest */,
+				528A8BC5BC105E09FB2A15EC /* BindTests.xctest */,
+				B2381BE056DBA63EB6356D5C /* BindTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -374,9 +374,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A00C05B8AD9EFBF6396608B /* TriggerTests_macOS */ = {
+		0A00C05B8AD9EFBF6396608B /* BindTests_macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF70CCA57351C7887D683BDC /* Build configuration list for PBXNativeTarget "TriggerTests_macOS" */;
+			buildConfigurationList = DF70CCA57351C7887D683BDC /* Build configuration list for PBXNativeTarget "BindTests_macOS" */;
 			buildPhases = (
 				E5CD73A38E31B9F9B4850E4F /* Sources */,
 				3857C57A19A2AE78C638FC60 /* Frameworks */,
@@ -387,14 +387,14 @@
 			dependencies = (
 				0B64AB51C41A30F36698A605 /* PBXTargetDependency */,
 			);
-			name = TriggerTests_macOS;
+			name = BindTests_macOS;
 			productName = TriggerTests_macOS;
-			productReference = 1D43A8B1E435FD4D1A2E97F9 /* TriggerTests.xctest */;
+			productReference = 1D43A8B1E435FD4D1A2E97F9 /* BindTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2627FD999CE9AF28D02E403D /* TriggerTests_tvOS */ = {
+		2627FD999CE9AF28D02E403D /* BindTests_tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBF8436987A3C11E02120404 /* Build configuration list for PBXNativeTarget "TriggerTests_tvOS" */;
+			buildConfigurationList = DBF8436987A3C11E02120404 /* Build configuration list for PBXNativeTarget "BindTests_tvOS" */;
 			buildPhases = (
 				EB98845C1137B74AFC7B60F2 /* Sources */,
 				C9D58B709CD96238821FEFE6 /* Frameworks */,
@@ -405,14 +405,14 @@
 			dependencies = (
 				A890615F603262CE01AE5DB2 /* PBXTargetDependency */,
 			);
-			name = TriggerTests_tvOS;
+			name = BindTests_tvOS;
 			productName = TriggerTests_tvOS;
-			productReference = 528A8BC5BC105E09FB2A15EC /* TriggerTests.xctest */;
+			productReference = 528A8BC5BC105E09FB2A15EC /* BindTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		65C41D17DA11C2079E83CE37 /* Trigger_watchOS */ = {
+		65C41D17DA11C2079E83CE37 /* Bind_watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CC0B9A3919ACD1F571B2BD9 /* Build configuration list for PBXNativeTarget "Trigger_watchOS" */;
+			buildConfigurationList = 9CC0B9A3919ACD1F571B2BD9 /* Build configuration list for PBXNativeTarget "Bind_watchOS" */;
 			buildPhases = (
 				DC06B4AD4D937357639D76B6 /* Sources */,
 			);
@@ -420,14 +420,14 @@
 			);
 			dependencies = (
 			);
-			name = Trigger_watchOS;
+			name = Bind_watchOS;
 			productName = Trigger_watchOS;
-			productReference = A0EFACDD491A2047FE3D4814 /* Trigger.framework */;
+			productReference = A0EFACDD491A2047FE3D4814 /* Bind.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		741338EC7820921882B999AA /* Trigger_iOS */ = {
+		741338EC7820921882B999AA /* Bind_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 066016ECB25C1A9984BCDFA9 /* Build configuration list for PBXNativeTarget "Trigger_iOS" */;
+			buildConfigurationList = 066016ECB25C1A9984BCDFA9 /* Build configuration list for PBXNativeTarget "Bind_iOS" */;
 			buildPhases = (
 				74BBD3BC73B89FBB506D7DF3 /* Sources */,
 			);
@@ -435,14 +435,14 @@
 			);
 			dependencies = (
 			);
-			name = Trigger_iOS;
+			name = Bind_iOS;
 			productName = Trigger_iOS;
-			productReference = 573E0E19C014B4EE5106A0F2 /* Trigger.framework */;
+			productReference = 573E0E19C014B4EE5106A0F2 /* Bind.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7EA0613068A023B6FD8B384D /* TriggerTests_watchOS */ = {
+		7EA0613068A023B6FD8B384D /* BindTests_watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0AD7FD5D7D722CD50AD7D1D /* Build configuration list for PBXNativeTarget "TriggerTests_watchOS" */;
+			buildConfigurationList = F0AD7FD5D7D722CD50AD7D1D /* Build configuration list for PBXNativeTarget "BindTests_watchOS" */;
 			buildPhases = (
 				7CEBE9377A9FDA028E60D918 /* Sources */,
 				C74145061C75CDBBA870D736 /* Frameworks */,
@@ -453,14 +453,14 @@
 			dependencies = (
 				6378D2573E7EC557761A32C5 /* PBXTargetDependency */,
 			);
-			name = TriggerTests_watchOS;
+			name = BindTests_watchOS;
 			productName = TriggerTests_watchOS;
-			productReference = B2381BE056DBA63EB6356D5C /* TriggerTests.xctest */;
+			productReference = B2381BE056DBA63EB6356D5C /* BindTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CBD293BB0FD6077C3660463B /* Trigger_tvOS */ = {
+		CBD293BB0FD6077C3660463B /* Bind_tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9ECBF332D78BD409EB9D2C28 /* Build configuration list for PBXNativeTarget "Trigger_tvOS" */;
+			buildConfigurationList = 9ECBF332D78BD409EB9D2C28 /* Build configuration list for PBXNativeTarget "Bind_tvOS" */;
 			buildPhases = (
 				2AE00070F5487DFCC7BF5667 /* Sources */,
 			);
@@ -468,14 +468,14 @@
 			);
 			dependencies = (
 			);
-			name = Trigger_tvOS;
+			name = Bind_tvOS;
 			productName = Trigger_tvOS;
-			productReference = FE2FBD83FC521B3DF7C7D58A /* Trigger.framework */;
+			productReference = FE2FBD83FC521B3DF7C7D58A /* Bind.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D4C95B095EB6D7C3F1E64735 /* Trigger_macOS */ = {
+		D4C95B095EB6D7C3F1E64735 /* Bind_macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9EFAAA9C50F1813C278BBD8A /* Build configuration list for PBXNativeTarget "Trigger_macOS" */;
+			buildConfigurationList = 9EFAAA9C50F1813C278BBD8A /* Build configuration list for PBXNativeTarget "Bind_macOS" */;
 			buildPhases = (
 				CD3696A03623CB324058E3D5 /* Sources */,
 			);
@@ -483,14 +483,14 @@
 			);
 			dependencies = (
 			);
-			name = Trigger_macOS;
+			name = Bind_macOS;
 			productName = Trigger_macOS;
-			productReference = 0165DC94BFE99BD3D3A96707 /* Trigger.framework */;
+			productReference = 0165DC94BFE99BD3D3A96707 /* Bind.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D4E99A1B3BF66490B4918380 /* TriggerTests_iOS */ = {
+		D4E99A1B3BF66490B4918380 /* BindTests_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF8921212BB2D45DF374FFB0 /* Build configuration list for PBXNativeTarget "TriggerTests_iOS" */;
+			buildConfigurationList = BF8921212BB2D45DF374FFB0 /* Build configuration list for PBXNativeTarget "BindTests_iOS" */;
 			buildPhases = (
 				2009FB2D4114B8F7211BE2AB /* Sources */,
 				DEB45C6FB00B430FA0C9AAB7 /* Frameworks */,
@@ -501,9 +501,9 @@
 			dependencies = (
 				79688FD050FE700DE1111EA9 /* PBXTargetDependency */,
 			);
-			name = TriggerTests_iOS;
+			name = BindTests_iOS;
 			productName = TriggerTests_iOS;
-			productReference = 91D93EE6FE99882FF6B5A4E3 /* TriggerTests.xctest */;
+			productReference = 91D93EE6FE99882FF6B5A4E3 /* BindTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -514,7 +514,7 @@
 			attributes = {
 				LastUpgradeCheck = 1020;
 			};
-			buildConfigurationList = 948052F99AE6614970592DB6 /* Build configuration list for PBXProject "Trigger" */;
+			buildConfigurationList = 948052F99AE6614970592DB6 /* Build configuration list for PBXProject "Bind" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -526,14 +526,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4E99A1B3BF66490B4918380 /* TriggerTests_iOS */,
-				0A00C05B8AD9EFBF6396608B /* TriggerTests_macOS */,
-				2627FD999CE9AF28D02E403D /* TriggerTests_tvOS */,
-				7EA0613068A023B6FD8B384D /* TriggerTests_watchOS */,
-				741338EC7820921882B999AA /* Trigger_iOS */,
-				D4C95B095EB6D7C3F1E64735 /* Trigger_macOS */,
-				CBD293BB0FD6077C3660463B /* Trigger_tvOS */,
-				65C41D17DA11C2079E83CE37 /* Trigger_watchOS */,
+				D4E99A1B3BF66490B4918380 /* BindTests_iOS */,
+				0A00C05B8AD9EFBF6396608B /* BindTests_macOS */,
+				2627FD999CE9AF28D02E403D /* BindTests_tvOS */,
+				7EA0613068A023B6FD8B384D /* BindTests_watchOS */,
+				741338EC7820921882B999AA /* Bind_iOS */,
+				D4C95B095EB6D7C3F1E64735 /* Bind_macOS */,
+				CBD293BB0FD6077C3660463B /* Bind_tvOS */,
+				65C41D17DA11C2079E83CE37 /* Bind_watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -708,22 +708,22 @@
 /* Begin PBXTargetDependency section */
 		0B64AB51C41A30F36698A605 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4C95B095EB6D7C3F1E64735 /* Trigger_macOS */;
+			target = D4C95B095EB6D7C3F1E64735 /* Bind_macOS */;
 			targetProxy = 1E84A582B05C2A6FA350FBBC /* PBXContainerItemProxy */;
 		};
 		6378D2573E7EC557761A32C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 65C41D17DA11C2079E83CE37 /* Trigger_watchOS */;
+			target = 65C41D17DA11C2079E83CE37 /* Bind_watchOS */;
 			targetProxy = 021A87B04739507787C1BF8D /* PBXContainerItemProxy */;
 		};
 		79688FD050FE700DE1111EA9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 741338EC7820921882B999AA /* Trigger_iOS */;
+			target = 741338EC7820921882B999AA /* Bind_iOS */;
 			targetProxy = 30A43DF452647C734FAA4116 /* PBXContainerItemProxy */;
 		};
 		A890615F603262CE01AE5DB2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBD293BB0FD6077C3660463B /* Trigger_tvOS */;
+			target = CBD293BB0FD6077C3660463B /* Bind_tvOS */;
 			targetProxy = E0073BACA465D18C9A9FCE25 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -748,7 +748,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-iOS";
-				PRODUCT_NAME = Trigger;
+				PRODUCT_NAME = Bind;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -772,7 +772,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-watchOS";
-				PRODUCT_NAME = Trigger;
+				PRODUCT_NAME = Bind;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -791,7 +791,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.TriggerTests-tvOS";
-				PRODUCT_NAME = TriggerTests;
+				PRODUCT_NAME = BindTests;
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -809,7 +809,7 @@
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.TriggerTests-macOS";
-				PRODUCT_NAME = TriggerTests;
+				PRODUCT_NAME = BindTests;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -901,7 +901,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-tvOS";
-				PRODUCT_NAME = Trigger;
+				PRODUCT_NAME = Bind;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -925,7 +925,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-watchOS";
-				PRODUCT_NAME = Trigger;
+				PRODUCT_NAME = Bind;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -945,7 +945,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.TriggerTests-iOS";
-				PRODUCT_NAME = TriggerTests;
+				PRODUCT_NAME = BindTests;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -962,7 +962,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.TriggerTests-watchOS";
-				PRODUCT_NAME = TriggerTests;
+				PRODUCT_NAME = BindTests;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -992,7 +992,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-tvOS";
-				PRODUCT_NAME = Trigger;
+				PRODUCT_NAME = Bind;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1012,7 +1012,7 @@
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.TriggerTests-macOS";
-				PRODUCT_NAME = TriggerTests;
+				PRODUCT_NAME = BindTests;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1042,7 +1042,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-macOS";
-				PRODUCT_NAME = Trigger;
+				PRODUCT_NAME = Bind;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1060,7 +1060,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.TriggerTests-watchOS";
-				PRODUCT_NAME = TriggerTests;
+				PRODUCT_NAME = BindTests;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1078,7 +1078,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.TriggerTests-tvOS";
-				PRODUCT_NAME = TriggerTests;
+				PRODUCT_NAME = BindTests;
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1153,7 +1153,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.TriggerTests-iOS";
-				PRODUCT_NAME = TriggerTests;
+				PRODUCT_NAME = BindTests;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1184,7 +1184,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-macOS";
-				PRODUCT_NAME = Trigger;
+				PRODUCT_NAME = Bind;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1211,7 +1211,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karmarama.Trigger-iOS";
-				PRODUCT_NAME = Trigger;
+				PRODUCT_NAME = Bind;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1223,7 +1223,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		066016ECB25C1A9984BCDFA9 /* Build configuration list for PBXNativeTarget "Trigger_iOS" */ = {
+		066016ECB25C1A9984BCDFA9 /* Build configuration list for PBXNativeTarget "Bind_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBDAE12870FA0E3DE5462F89 /* Debug */,
@@ -1232,7 +1232,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "";
 		};
-		948052F99AE6614970592DB6 /* Build configuration list for PBXProject "Trigger" */ = {
+		948052F99AE6614970592DB6 /* Build configuration list for PBXProject "Bind" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				665221B89036452AB618F2F0 /* Debug */,
@@ -1241,7 +1241,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		9CC0B9A3919ACD1F571B2BD9 /* Build configuration list for PBXNativeTarget "Trigger_watchOS" */ = {
+		9CC0B9A3919ACD1F571B2BD9 /* Build configuration list for PBXNativeTarget "Bind_watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1746FF085E31832CC4F9B88D /* Debug */,
@@ -1250,7 +1250,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "";
 		};
-		9ECBF332D78BD409EB9D2C28 /* Build configuration list for PBXNativeTarget "Trigger_tvOS" */ = {
+		9ECBF332D78BD409EB9D2C28 /* Build configuration list for PBXNativeTarget "Bind_tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6CEA400285446E4D891D0164 /* Debug */,
@@ -1259,7 +1259,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "";
 		};
-		9EFAAA9C50F1813C278BBD8A /* Build configuration list for PBXNativeTarget "Trigger_macOS" */ = {
+		9EFAAA9C50F1813C278BBD8A /* Build configuration list for PBXNativeTarget "Bind_macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D98BDA3ADB47D8CAAFD5A74D /* Debug */,
@@ -1268,7 +1268,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "";
 		};
-		BF8921212BB2D45DF374FFB0 /* Build configuration list for PBXNativeTarget "TriggerTests_iOS" */ = {
+		BF8921212BB2D45DF374FFB0 /* Build configuration list for PBXNativeTarget "BindTests_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7591182AD03135A0F2C79184 /* Debug */,
@@ -1277,7 +1277,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "";
 		};
-		DBF8436987A3C11E02120404 /* Build configuration list for PBXNativeTarget "TriggerTests_tvOS" */ = {
+		DBF8436987A3C11E02120404 /* Build configuration list for PBXNativeTarget "BindTests_tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39EA3CB78096A72A05C740BD /* Debug */,
@@ -1286,7 +1286,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "";
 		};
-		DF70CCA57351C7887D683BDC /* Build configuration list for PBXNativeTarget "TriggerTests_macOS" */ = {
+		DF70CCA57351C7887D683BDC /* Build configuration list for PBXNativeTarget "BindTests_macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D73607E5AAD0A67871AC99A /* Debug */,
@@ -1295,7 +1295,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "";
 		};
-		F0AD7FD5D7D722CD50AD7D1D /* Build configuration list for PBXNativeTarget "TriggerTests_watchOS" */ = {
+		F0AD7FD5D7D722CD50AD7D1D /* Build configuration list for PBXNativeTarget "BindTests_watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97E1A85B595EC8BFC9B62219 /* Debug */,
