@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: - Core
-public class Trigger<Value>: Unbindable {
+public class Output<Value>: Unbindable {
   public struct Printer: Printable {
     public init() {}
     public func print(_ value: String) {
@@ -70,7 +70,7 @@ public class Trigger<Value>: Unbindable {
     return subscription
   }
   
-  public func debug(identifier: String) -> Trigger<Value> {
+  public func debug(identifier: String) -> Output<Value> {
     debugIdentifier = identifier
     return self
   }
@@ -85,97 +85,97 @@ public protocol Printable {
 }
 
 // MARK: - Functional extensions
-public extension Trigger {
-  static func combine(_ trigger1: Trigger<Value>, _ trigger2: Trigger<Value>) -> Trigger<(Value, Value)> {
-    let trigger = Trigger<(Value, Value)>()
+public extension Output {
+  static func combine(_ output1: Output<Value>, _ output2: Output<Value>) -> Output<(Value, Value)> {
+    let output = Output<(Value, Value)>()
     
-    trigger1.bind { value1 in
-      if let value2 = trigger2.value {
-        trigger.update(withValue: (value1, value2))
+    output1.bind { value1 in
+      if let value2 = output2.value {
+        output.update(withValue: (value1, value2))
       }
     }
     
-    trigger2.bind { value2 in
-      if let value1 = trigger1.value {
-        trigger.update(withValue: (value1, value2))
+    output2.bind { value2 in
+      if let value1 = output1.value {
+        output.update(withValue: (value1, value2))
       }
     }
     
-    return trigger
+    return output
   }
   
-  static func combine<A, B>(_ trigger1: Trigger<A>, _ trigger2: Trigger<B>) -> Trigger<(A, B)> {
-    let trigger = Trigger<(A, B)>()
+  static func combine<A, B>(_ output1: Output<A>, _ output2: Output<B>) -> Output<(A, B)> {
+    let output = Output<(A, B)>()
     
-    trigger1.bind { value1 in
-      if let value2 = trigger2.value {
-        trigger.update(withValue: (value1, value2))
+    output1.bind { value1 in
+      if let value2 = output2.value {
+        output.update(withValue: (value1, value2))
       }
     }
     
-    trigger2.bind { value2 in
-      if let value1 = trigger1.value {
-        trigger.update(withValue: (value1, value2))
+    output2.bind { value2 in
+      if let value1 = output1.value {
+        output.update(withValue: (value1, value2))
       }
     }
     
-    return trigger
+    return output
   }
   
-  static func merge(_ trigger1: Trigger<Value>, _ trigger2: Trigger<Value>) -> Trigger<Value> {
-    let trigger = Trigger<Value>()
+  static func merge(_ output1: Output<Value>, _ output2: Output<Value>) -> Output<Value> {
+    let output = Output<Value>()
     
-    trigger1.bind { value1 in
-      trigger.update(withValue: value1)
+    output1.bind { value1 in
+      output.update(withValue: value1)
     }
     
-    trigger2.bind { value2 in
-      trigger.update(withValue: value2)
+    output2.bind { value2 in
+      output.update(withValue: value2)
     }
     
-    return trigger
+    return output
   }
   
   /**
-   `map` performs a transform over a Value and returns it as `TransformedValue` wrapped in its own `Trigger`
+   `map` performs a transform over a Value and returns it as `TransformedValue` wrapped in its own `Output`
    - Parameter transform: The function that transform `Value` into `TransformedValue`
-   - Returns: A `Trigger` of type `TransformedValue`
+   - Returns: A `Output` of type `TransformedValue`
    */
-  func map<TransformedValue>(_ transform: @escaping (Value) -> TransformedValue) -> Trigger<TransformedValue> {
-    let trigger = Trigger<TransformedValue>()
+  func map<TransformedValue>(_ transform: @escaping (Value) -> TransformedValue) -> Output<TransformedValue> {
+    let output = Output<TransformedValue>()
     
     bind { value in
-      trigger.update(withValue: transform(value))
+      output.update(withValue: transform(value))
     }
     
-    return trigger
+    return output
   }
   
   /**
-   `flatMap` performs a transform over a Value and returns it as `Trigger<TransformedValue>` by flattening
-   the nested Triggers
-   - Parameter transform: The function that transform `Value` into a new `Trigger` of type `<TransformedValue>`
-   - Returns: A flattened `Trigger` of type `TransformedValue`
+   `flatMap` performs a transform over a Value and returns it as `Output<TransformedValue>` by flattening
+   the nested Outputs
+   - Parameter transform: The function that transform `Value` into a new `Output` of type `<TransformedValue>`
+   - Returns: A flattened `Output` of type `TransformedValue`
    */
-  func flatMap<TransformedValue>(_ transform: @escaping (Value) -> Trigger<TransformedValue>)
-    -> Trigger<TransformedValue> {
-      let trigger = Trigger<TransformedValue>()
+  func flatMap<TransformedValue>(_ transform: @escaping (Value) -> Output<TransformedValue>)
+    -> Output<TransformedValue> {
+      let output = Output<TransformedValue>()
       
       bind { value in
-        let resultTrigger = transform(value)
+        let resultOutput = transform(value)
         
-        // Bind to the resultTrigger to extract the value so it can 'flatten'
-        resultTrigger.bind { value in
-          trigger.update(withValue: value)
+        // Bind to the resultOutput to extract the value so it can 'flatten'
+        resultOutput.bind { value in
+          output.update(withValue: value)
         }
       }
       
-      return trigger
+      return output
   }
 }
 
 // MARK: - Typed extensions
-public extension Trigger where Value == Bool {
+public extension Output where Value == Bool {
   func invert() {
     guard let currentValue = value else {
       return

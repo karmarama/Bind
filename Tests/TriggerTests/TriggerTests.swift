@@ -2,18 +2,18 @@ import XCTest
 
 @testable import Trigger
 
-final class TriggerTests: XCTestCase {
+final class OutputTests: XCTestCase {
   func testInitialNoValue() {
-    let trigger = Trigger<String>()
-    trigger.bind { _ in
-      XCTFail("should not be called as Trigger has no value set")
+    let output = Output<String>()
+    output.bind { _ in
+      XCTFail("should not be called as Output has no value set")
     }
   }
   
   func testInitialValue() {
-    let trigger = Trigger<String>(value: "Test")
+    let output = Output<String>(value: "Test")
     var closureCalled: Bool = false
-    trigger.debug(identifier: "123").bind { value in
+    output.debug(identifier: "123").bind { value in
       XCTAssertEqual("Test", value)
       closureCalled = true
     }
@@ -23,12 +23,12 @@ final class TriggerTests: XCTestCase {
   func testBinderIsCalled() {
     let testObject = TestObject()
     
-    let trigger = Trigger<String>()
-    trigger.bind(to: testObject.binding.text)
+    let output = Output<String>()
+    output.bind(to: testObject.binding.text)
     
     XCTAssertNil(testObject.text)
     
-    trigger.update(withValue: "Test")
+    output.update(withValue: "Test")
     
     XCTAssertEqual(testObject.text, "Test")
   }
@@ -37,84 +37,84 @@ final class TriggerTests: XCTestCase {
     let testObjectOne = TestObject()
     let testObjectTwo = TestObject()
     
-    let trigger = Trigger<String>()
-    trigger.bind(to: [testObjectOne.binding.text,
+    let output = Output<String>()
+    output.bind(to: [testObjectOne.binding.text,
                       testObjectTwo.binding.text])
     
     XCTAssertNil(testObjectOne.text)
     XCTAssertNil(testObjectTwo.text)
     
-    trigger.update(withValue: "Test")
+    output.update(withValue: "Test")
     
     XCTAssertEqual(testObjectOne.text, "Test")
     XCTAssertEqual(testObjectTwo.text, "Test")
   }
   
   func testToggleWithValue() {
-    let trigger = Trigger(value: true)
-    XCTAssertEqual(trigger.latest, true)
+    let output = Output(value: true)
+    XCTAssertEqual(output.latest, true)
     
-    trigger.invert()
+    output.invert()
     
-    XCTAssertEqual(trigger.latest, false)
+    XCTAssertEqual(output.latest, false)
   }
   
   func testToggleWithNoValue() {
-    let trigger = Trigger<Bool>()
-    XCTAssertNil(trigger.latest)
+    let output = Output<Bool>()
+    XCTAssertNil(output.latest)
     
-    trigger.invert()
-    XCTAssertNil(trigger.latest)
+    output.invert()
+    XCTAssertNil(output.latest)
   }
   
   func testUnbind() {
     let testObject = TestObject()
     
-    let trigger = Trigger<String>()
-    let subscription = trigger.bind(to: testObject.binding.text)
+    let output = Output<String>()
+    let subscription = output.bind(to: testObject.binding.text)
     
     XCTAssertNil(testObject.text)
     
-    trigger.update(withValue: "Test")
+    output.update(withValue: "Test")
     
     XCTAssertEqual(testObject.text, "Test")
     
-    trigger.unbind(for: subscription)
+    output.unbind(for: subscription)
     
-    trigger.update(withValue: "New Test")
+    output.update(withValue: "New Test")
     
     XCTAssertEqual(testObject.text, "Test")
   }
   
   func testCombine() {
-    let trigger1 = Trigger<Bool>()
-    let trigger2 = Trigger<Bool>()
+    let output1 = Output<Bool>()
+    let output2 = Output<Bool>()
     
-    var triggerValue1: Bool?
-    var triggerValue2: Bool?
+    var outputValue1: Bool?
+    var outputValue2: Bool?
     
-    Trigger<Bool>.combine(trigger1, trigger2).bind { value1, value2 in
-      triggerValue1 = value1
-      triggerValue2 = value2
+    Output<Bool>.combine(output1, output2).bind { value1, value2 in
+      outputValue1 = value1
+      outputValue2 = value2
     }
     
-    XCTAssertEqual(triggerValue1, nil)
-    XCTAssertEqual(triggerValue2, nil)
+    XCTAssertEqual(outputValue1, nil)
+    XCTAssertEqual(outputValue2, nil)
     
-    trigger1.update(withValue: true)
+    output1.update(withValue: true)
     
-    XCTAssertEqual(triggerValue1, nil)
-    XCTAssertEqual(triggerValue2, nil)
+    XCTAssertEqual(outputValue1, nil)
+    XCTAssertEqual(outputValue2, nil)
     
-    trigger2.update(withValue: true)
+    output2.update(withValue: true)
     
-    XCTAssertEqual(triggerValue1, true)
-    XCTAssertEqual(triggerValue2, true)
+    XCTAssertEqual(outputValue1, true)
+    XCTAssertEqual(outputValue2, true)
     
-    trigger1.update(withValue: false)
+    output1.update(withValue: false)
     
-    XCTAssertEqual(triggerValue1, false)
-    XCTAssertEqual(triggerValue2, true)
+    XCTAssertEqual(outputValue1, false)
+    XCTAssertEqual(outputValue2, true)
   }
   
   func testMap() {
@@ -124,9 +124,9 @@ final class TriggerTests: XCTestCase {
       case two
     }
     
-    let value = Trigger<TestEnum>()
+    let value = Output<TestEnum>()
     
-    let mappedValue: Trigger<String> =
+    let mappedValue: Output<String> =
       value
         .map { type in
           switch type {
@@ -154,16 +154,16 @@ final class TriggerTests: XCTestCase {
       case two
     }
     
-    let value = Trigger<TestEnum>()
+    let value = Output<TestEnum>()
     
-    let mappedValue: Trigger<String> =
+    let mappedValue: Output<String> =
       value
         .flatMap { type in
           switch type {
           case .one:
-            return Trigger(value: "one")
+            return Output(value: "one")
           case .two:
-            return Trigger(value: "two")
+            return Output(value: "two")
           }
     }
     
@@ -179,11 +179,11 @@ final class TriggerTests: XCTestCase {
   
   func testDebug() {
     let printer = PrinterMock()
-    let trigger1 = Trigger<Bool>(printer: printer)
+    let output1 = Output<Bool>(printer: printer)
     
     XCTAssertTrue(printer.printValues.isEmpty)
     
-    trigger1
+    output1
       .debug(identifier: "123")
       .bind { _ in }
     
@@ -192,7 +192,7 @@ final class TriggerTests: XCTestCase {
     XCTAssertEqual(printer.printValues[1], "Binding 123 (Trigger<Bool>) to (Function)")
     XCTAssertEqual(printer.printValues[2], "To bindings: [Trigger.Subscription: (Function)]")
     
-    trigger1.update(withValue: false)
+    output1.update(withValue: false)
     
     XCTAssertEqual(printer.printValues.count, 8)
     XCTAssertEqual(printer.printValues[3], "---")

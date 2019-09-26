@@ -1,7 +1,7 @@
 import Foundation
 @testable import Trigger
 
-extension Trigger {
+extension Output {
   var latest: Value? {
     var value: Value?
     
