@@ -139,7 +139,7 @@ public extension Output {
   /**
    `map` performs a transform over a Value and returns it as `TransformedValue` wrapped in its own `Output`
    - Parameter transform: The function that transform `Value` into `TransformedValue`
-   - Returns: A `Output` of type `TransformedValue`
+   - Returns: An `Output` of type `TransformedValue`
    */
   func map<TransformedValue>(_ transform: @escaping (Value) -> TransformedValue) -> Output<TransformedValue> {
     let output = Output<TransformedValue>()
