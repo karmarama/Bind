@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "741338EC7820921882B999AA"
-               BuildableName = "Trigger.framework"
+               BuildableName = "Bind.framework"
                BlueprintName = "Bind_iOS"
                ReferencedContainer = "container:Bind.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "741338EC7820921882B999AA"
-            BuildableName = "Trigger.framework"
+            BuildableName = "Bind.framework"
             BlueprintName = "Bind_iOS"
             ReferencedContainer = "container:Bind.xcodeproj">
          </BuildableReference>
@@ -42,7 +42,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4E99A1B3BF66490B4918380"
-               BuildableName = "TriggerTests.xctest"
+               BuildableName = "BindTests.xctest"
                BlueprintName = "BindTests_iOS"
                ReferencedContainer = "container:Bind.xcodeproj">
             </BuildableReference>
@@ -63,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "741338EC7820921882B999AA"
-            BuildableName = "Trigger.framework"
+            BuildableName = "Bind.framework"
             BlueprintName = "Bind_iOS"
             ReferencedContainer = "container:Bind.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "741338EC7820921882B999AA"
-            BuildableName = "Trigger.framework"
+            BuildableName = "Bind.framework"
             BlueprintName = "Bind_iOS"
             ReferencedContainer = "container:Bind.xcodeproj">
          </BuildableReference>

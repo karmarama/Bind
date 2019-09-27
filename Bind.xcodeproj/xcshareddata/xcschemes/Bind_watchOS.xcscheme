@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "65C41D17DA11C2079E83CE37"
-               BuildableName = "Trigger.framework"
+               BuildableName = "Bind.framework"
                BlueprintName = "Bind_watchOS"
                ReferencedContainer = "container:Bind.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "65C41D17DA11C2079E83CE37"
-            BuildableName = "Trigger.framework"
+            BuildableName = "Bind.framework"
             BlueprintName = "Bind_watchOS"
             ReferencedContainer = "container:Bind.xcodeproj">
          </BuildableReference>
@@ -42,7 +42,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7EA0613068A023B6FD8B384D"
-               BuildableName = "TriggerTests.xctest"
+               BuildableName = "BindTests.xctest"
                BlueprintName = "BindTests_watchOS"
                ReferencedContainer = "container:Bind.xcodeproj">
             </BuildableReference>
@@ -63,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "65C41D17DA11C2079E83CE37"
-            BuildableName = "Trigger.framework"
+            BuildableName = "Bind.framework"
             BlueprintName = "Bind_watchOS"
             ReferencedContainer = "container:Bind.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "65C41D17DA11C2079E83CE37"
-            BuildableName = "Trigger.framework"
+            BuildableName = "Bind.framework"
             BlueprintName = "Bind_watchOS"
             ReferencedContainer = "container:Bind.xcodeproj">
          </BuildableReference>
