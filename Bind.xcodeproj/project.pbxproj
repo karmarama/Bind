@@ -71,6 +71,15 @@
 		812CDA7052B612388268AA65 /* Bindable+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */; };
 		82A3BE668A9A1F660BD8F9C7 /* Bindable+UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942663303E9CBE59E3B4530 /* Bindable+UIControl.swift */; };
 		8755A73D23479B5700C8AD07 /* BindableTestsUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A73C23479B5700C8AD07 /* BindableTestsUIKit.swift */; };
+		8755A73F2347A88D00C8AD07 /* RelayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A73E2347A88D00C8AD07 /* RelayTests.swift */; };
+		8755A7412347A92500C8AD07 /* SubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A7402347A92500C8AD07 /* SubscriptionTests.swift */; };
+		8755A7422347A93400C8AD07 /* SubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A7402347A92500C8AD07 /* SubscriptionTests.swift */; };
+		8755A7432347A93400C8AD07 /* SubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A7402347A92500C8AD07 /* SubscriptionTests.swift */; };
+		8755A7442347A93500C8AD07 /* SubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A7402347A92500C8AD07 /* SubscriptionTests.swift */; };
+		8755A7452347A93700C8AD07 /* RelayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A73E2347A88D00C8AD07 /* RelayTests.swift */; };
+		8755A7462347A93800C8AD07 /* RelayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A73E2347A88D00C8AD07 /* RelayTests.swift */; };
+		8755A7472347A93800C8AD07 /* RelayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A73E2347A88D00C8AD07 /* RelayTests.swift */; };
+		8755A7482347A93E00C8AD07 /* BindableTestsUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A73C23479B5700C8AD07 /* BindableTestsUIKit.swift */; };
 		8774D75FE1168D2F1D4CE056 /* Bindable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */; };
 		8916D29F0AEF2B864EED6B53 /* Bindable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */; };
 		8A9566D706D206E76327E3DB /* Bindable+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */; };
@@ -227,6 +236,8 @@
 		66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UISwitch.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		6CC3A366761CF271F4BB17DD /* Bindable+UIGestureRecognizer.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIGestureRecognizer.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		8755A73C23479B5700C8AD07 /* BindableTestsUIKit.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = BindableTestsUIKit.swift; sourceTree = "<group>"; tabWidth = 4; };
+		8755A73E2347A88D00C8AD07 /* RelayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayTests.swift; sourceTree = "<group>"; };
+		8755A7402347A92500C8AD07 /* SubscriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTests.swift; sourceTree = "<group>"; };
 		87BCBA1C96D1499A2368C6C4 /* Bindable+UIViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIViewController.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIImageView.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		91D93EE6FE99882FF6B5A4E3 /* BindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -382,10 +393,12 @@
 		EF9A5E0E64D40EF1055B650C /* BindTests */ = {
 			isa = PBXGroup;
 			children = (
+				0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */,
 				8755A73B2347997A00C8AD07 /* Mock */,
 				8755A73A2347996A00C8AD07 /* Helpers */,
 				F37E541BF3AF26462B57BAF0 /* OutputTests.swift */,
-				0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */,
+				8755A73E2347A88D00C8AD07 /* RelayTests.swift */,
+				8755A7402347A92500C8AD07 /* SubscriptionTests.swift */,
 				8755A73C23479B5700C8AD07 /* BindableTestsUIKit.swift */,
 			);
 			path = BindTests;
@@ -658,6 +671,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEEB7E76CA6E133DCE59BD82 /* PrinterMock.swift in Sources */,
+				8755A73F2347A88D00C8AD07 /* RelayTests.swift in Sources */,
+				8755A7412347A92500C8AD07 /* SubscriptionTests.swift in Sources */,
 				2D1C7E116D41AC6269445022 /* BindableMock.swift in Sources */,
 				637549C2D38B6A9E34E3C05E /* Output+Extension.swift in Sources */,
 				8755A73D23479B5700C8AD07 /* BindableTestsUIKit.swift in Sources */,
@@ -729,9 +744,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4013160F0DA927102E0A4028 /* PrinterMock.swift in Sources */,
+				8755A7472347A93800C8AD07 /* RelayTests.swift in Sources */,
 				16B22C259512A6A4DB492648 /* BindableMock.swift in Sources */,
 				F37FB2DC1E254424AC2BAE03 /* Output+Extension.swift in Sources */,
 				1DB68B189147E165DF6BB137 /* OutputTests.swift in Sources */,
+				8755A7442347A93500C8AD07 /* SubscriptionTests.swift in Sources */,
 				F8D680F76C8E320CC2E8867A /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -799,9 +816,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8428486B13DF705F151FDD6 /* PrinterMock.swift in Sources */,
+				8755A7452347A93700C8AD07 /* RelayTests.swift in Sources */,
 				28AB432723BFCC656F66C488 /* BindableMock.swift in Sources */,
 				B603ED1DF83FB4467FB9B868 /* Output+Extension.swift in Sources */,
 				6F853E9E0052D86B01B6F4F3 /* OutputTests.swift in Sources */,
+				8755A7482347A93E00C8AD07 /* BindableTestsUIKit.swift in Sources */,
+				8755A7422347A93400C8AD07 /* SubscriptionTests.swift in Sources */,
 				0B45047050F5C9C35397C4BF /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -811,9 +831,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF24AD8797A54817F724F1B /* PrinterMock.swift in Sources */,
+				8755A7462347A93800C8AD07 /* RelayTests.swift in Sources */,
 				9D059CF3C7783B55F63C17CB /* BindableMock.swift in Sources */,
 				23ED5475B3FF87CBAF7B1701 /* Output+Extension.swift in Sources */,
 				42DCB57764A902476445A1ED /* OutputTests.swift in Sources */,
+				8755A7432347A93400C8AD07 /* SubscriptionTests.swift in Sources */,
 				46C05FB016E9D3B8E4BE6186 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -84,6 +84,22 @@ public protocol Printable {
 
 // MARK: - Functional extensions
 public extension Output {
+    static func combine(outputs: [Output<Value>]) -> Output<[Value]> {
+        let returnOutput = Output<[Value]>()
+
+        for output in outputs {
+            output.bind { _ in
+                let values = outputs.compactMap { $0.value }
+
+                if values.count == outputs.count {
+                    returnOutput.update(withValue: values)
+                }
+            }
+        }
+
+        return returnOutput
+    }
+
     static func combine(_ output1: Output<Value>, _ output2: Output<Value>) -> Output<(Value, Value)> {
         let output = Output<(Value, Value)>()
 
