@@ -1,10 +1,10 @@
 @testable import Bind
 
-final class TestObject: BindableCompatible {
+final class BindableMock: BindableCompatible {
     var text: String?
 }
 
-extension Bindable where TargetType: TestObject {
+extension Bindable where TargetType: BindableMock {
     var text: Binder<String> {
         return Binder<String>(self.target) { testObject, text in
             testObject.text = text

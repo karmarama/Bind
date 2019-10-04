@@ -20,7 +20,7 @@ final class OutputTests: XCTestCase {
     }
 
     func testBinderIsCalled() {
-        let testObject = TestObject()
+        let testObject = BindableMock()
 
         let output = Output<String>()
         output.bind(to: testObject.binding.text)
@@ -33,8 +33,8 @@ final class OutputTests: XCTestCase {
     }
 
     func testMultipleBinderIsCalled() {
-        let testObjectOne = TestObject()
-        let testObjectTwo = TestObject()
+        let testObjectOne = BindableMock()
+        let testObjectTwo = BindableMock()
 
         let output = Output<String>()
         output.bind(to: [testObjectOne.binding.text,
@@ -67,7 +67,7 @@ final class OutputTests: XCTestCase {
     }
 
     func testUnbind() {
-        let testObject = TestObject()
+        let testObject = BindableMock()
 
         let output = Output<String>()
         let subscription = output.bind(to: testObject.binding.text)
@@ -174,6 +174,24 @@ final class OutputTests: XCTestCase {
 
         value.update(withValue: .one)
         XCTAssertEqual(mappedValue.latest, "one")
+    }
+
+    func testFilter() {
+        let value = Output<String>()
+
+        let filteredValue = value
+            .filter { string in
+                return string.contains("test")
+            }
+
+        value.update(withValue: "first test")
+        XCTAssertEqual(filteredValue.latest, "first test")
+
+        value.update(withValue: "not")
+        XCTAssertEqual(filteredValue.latest, "first test")
+
+        value.update(withValue: "second test")
+        XCTAssertEqual(filteredValue.latest, "second test")
     }
 
     func testDebug() {
