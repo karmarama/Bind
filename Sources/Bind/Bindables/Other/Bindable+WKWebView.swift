@@ -9,4 +9,3 @@ public extension Bindable where TargetType: WKWebView {
     }
 }
 #endif
-

@@ -4,7 +4,7 @@ import UIKit
 public extension Bindable where TargetType: UISearchBar {
     var placeholder: Binder<String> {
         return Binder<String>(self.target) { searchbar, placeholder in
-           searchbar.placeholder = placeholder
+            searchbar.placeholder = placeholder
         }
     }
 }

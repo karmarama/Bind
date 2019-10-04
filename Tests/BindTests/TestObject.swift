@@ -1,14 +1,13 @@
-import Foundation
 @testable import Bind
 
-class TestObject: BindableCompatible {
-  var text: String?
+final class TestObject: BindableCompatible {
+    var text: String?
 }
 
 extension Bindable where TargetType: TestObject {
-  var text: Binder<String> {
-    return Binder<String>(self.target) { testObject, text in
-      testObject.text = text
+    var text: Binder<String> {
+        return Binder<String>(self.target) { testObject, text in
+            testObject.text = text
+        }
     }
-  }
 }
