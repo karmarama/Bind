@@ -292,6 +292,40 @@ final class OutputTests: XCTestCase {
         XCTAssertEqual(merge.latest, 5)
     }
 
+    func testReduceReferenceType() {
+        class TestObject { //swiftlint:disable:this nesting
+            var currentString: String = ""
+        }
+
+        let initial = Output<Int>()
+
+        let reduced = initial
+            .reduce(initial: TestObject()) { current, number -> TestObject in
+                var currentString = current.currentString
+                currentString += "\(number)"
+                current.currentString = currentString
+                return current
+            }
+
+        for value in [1, 2, 3, 4, 5] {
+            initial.update(withValue: value)
+        }
+
+        XCTAssertEqual(reduced.latest?.currentString, "12345")
+    }
+
+    func testReduceValueType() {
+        let initial = Output<Int>()
+
+        let reduced = initial.reduce(initial: 0, nextPartialResult: +)
+
+        for value in [1, 2, 3, 4, 5] {
+            initial.update(withValue: value)
+        }
+
+        XCTAssertEqual(reduced.latest, 15)
+    }
+
     func testDebug() {
         let printer = PrinterMock()
         let output1 = Output<Bool>(printer: printer)
