@@ -7,6 +7,7 @@ import XCTest
 final class BindableTestsUIKit: XCTestCase {
     func testLabel() {
         let label = UILabel()
+        label.textColor = .black
         let attributedLabel = UILabel()
 
         let textOutput = Output<String>()

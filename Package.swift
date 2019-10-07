@@ -4,13 +4,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "Trigger",
+    name: "Bind",
+    platforms: [
+        .iOS(.v11),
+        .macOS(.v10_12)
+    ],
     products: [
         .library(
-            name: "Trigger", targets: ["Trigger"])
+            name: "Bind", targets: ["Bind"])
     ],
     targets: [
-        .target( name: "Trigger"),
-        .testTarget( name: "TriggerTests", dependencies: ["Trigger"])
-    ]
+        .target( name: "Bind"),
+        .testTarget( name: "BindTests", dependencies: ["Bind"])
+    ],
+    swiftLanguageVersions: [.v5]
 )
