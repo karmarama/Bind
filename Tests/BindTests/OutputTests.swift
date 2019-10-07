@@ -333,16 +333,4 @@ final class OutputTests: XCTestCase {
         XCTAssertEqual(printer.printValues[6], "Did update value for 123 (Output<Bool>) to false")
         XCTAssertEqual(printer.printValues[7], "To bindings: [Bind.Subscription: (Function)]")
     }
-
-    static var allTests = [
-        ("testInitialNoValue", testInitialNoValue),
-        ("testInitialValue", testInitialValue),
-        ("testBinderIsCalled", testBinderIsCalled),
-        ("testMultipleBinderIsCalled", testMultipleBinderIsCalled),
-        ("testUnbind", testUnbind),
-        ("testCombine", testCombine),
-        ("testMap", testMap),
-        ("testFlatMap", testFlatMap),
-        ("testDebug", testDebug)
-    ]
 }

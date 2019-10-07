@@ -2,7 +2,6 @@ import XCTest
 @testable import Bind
 
 final class SubscriptionTests: XCTestCase {
-
     func testUnsubscribe() {
         let mockUnbindable = UnbindableMock()
         let subscription = Subscription(unbinder: mockUnbindable)

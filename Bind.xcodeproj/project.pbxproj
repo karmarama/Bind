@@ -12,7 +12,6 @@
 		09C97810D516C764A809157B /* Bind.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE2FBD83FC521B3DF7C7D58A /* Bind.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A920FECAE068974826139B5 /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA90802ED919DAACC99253 /* Output.swift */; };
 		0AF92A8DD7524AA8424B0F69 /* Bind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2FBD83FC521B3DF7C7D58A /* Bind.framework */; };
-		0B45047050F5C9C35397C4BF /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
 		0CFF86D7A18A5931DA443039 /* Bindable+UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */; };
 		0DA9C3D0F120BD02D2CE2CAF /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA90802ED919DAACC99253 /* Output.swift */; };
 		0EB23076233B801500C5B7CB /* Bindable+WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB23075233B801500C5B7CB /* Bindable+WKWebView.swift */; };
@@ -45,7 +44,6 @@
 		4013160F0DA927102E0A4028 /* PrinterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */; };
 		41B2CFF1147DB924DB2F7238 /* Bindable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */; };
 		42DCB57764A902476445A1ED /* OutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* OutputTests.swift */; };
-		46C05FB016E9D3B8E4BE6186 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
 		49E0D1227B1320BE23158F90 /* Bindable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */; };
 		4A3D96DE7A62AD7FAE8A103A /* Bindable+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */; };
 		51276A88F751D64318F272D8 /* Bindable+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */; };
@@ -88,7 +86,6 @@
 		8916D29F0AEF2B864EED6B53 /* Bindable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */; };
 		8A9566D706D206E76327E3DB /* Bindable+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */; };
 		9015E14D3A62FB45789219B3 /* Bindable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */; };
-		9242D8FF64743A5179429422 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
 		9320C85A024298682EE5EB24 /* Bindable+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */; };
 		9A39C0AAE8EEE138E29862EB /* Bindable+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */; };
 		9D059CF3C7783B55F63C17CB /* BindableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* BindableMock.swift */; };
@@ -132,7 +129,6 @@
 		F5413A858E91952D871D059C /* Bind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0165DC94BFE99BD3D3A96707 /* Bind.framework */; };
 		F5D1EB844669593072D92813 /* Bindable+UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6726D9B070B7961E9E60F8 /* Bindable+UINavigationItem.swift */; };
 		F788AA106AEF18EA67BB2F9F /* Bindable+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */; };
-		F8D680F76C8E320CC2E8867A /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
 		FBB9F4C238F1A766E8DF9417 /* Bind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EFACDD491A2047FE3D4814 /* Bind.framework */; };
 		FBF24AD8797A54817F724F1B /* PrinterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */; };
 		FCA3E90C3CF087E74F120579 /* Bindable+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */; };
@@ -224,7 +220,6 @@
 		0EB23075233B801500C5B7CB /* Bindable+WKWebView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+WKWebView.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		0EB2307A233BB2CC00C5B7CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UISearchBar.swift"; sourceTree = "<group>"; tabWidth = 4; };
-		0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; tabWidth = 4; };
 		123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIActivityIndicatorView.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UITabBar.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		1D43A8B1E435FD4D1A2E97F9 /* BindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -399,7 +394,6 @@
 		EF9A5E0E64D40EF1055B650C /* BindTests */ = {
 			isa = PBXGroup;
 			children = (
-				0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */,
 				8755A73B2347997A00C8AD07 /* Mock */,
 				8755A73A2347996A00C8AD07 /* Helpers */,
 				F37E541BF3AF26462B57BAF0 /* OutputTests.swift */,
@@ -684,7 +678,6 @@
 				637549C2D38B6A9E34E3C05E /* Output+Extension.swift in Sources */,
 				8755A73D23479B5700C8AD07 /* BindableTestsUIKit.swift in Sources */,
 				01E5833DB935E59214FC2136 /* OutputTests.swift in Sources */,
-				9242D8FF64743A5179429422 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,7 +750,6 @@
 				1DB68B189147E165DF6BB137 /* OutputTests.swift in Sources */,
 				8755A74D234B509000C8AD07 /* UnbindableMock.swift in Sources */,
 				8755A7442347A93500C8AD07 /* SubscriptionTests.swift in Sources */,
-				F8D680F76C8E320CC2E8867A /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,7 +823,6 @@
 				6F853E9E0052D86B01B6F4F3 /* OutputTests.swift in Sources */,
 				8755A7482347A93E00C8AD07 /* BindableTestsUIKit.swift in Sources */,
 				8755A7422347A93400C8AD07 /* SubscriptionTests.swift in Sources */,
-				0B45047050F5C9C35397C4BF /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,7 +837,6 @@
 				42DCB57764A902476445A1ED /* OutputTests.swift in Sources */,
 				8755A74C234B509000C8AD07 /* UnbindableMock.swift in Sources */,
 				8755A7432347A93400C8AD07 /* SubscriptionTests.swift in Sources */,
-				46C05FB016E9D3B8E4BE6186 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

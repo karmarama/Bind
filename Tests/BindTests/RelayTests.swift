@@ -12,7 +12,7 @@ final class RelayTests: XCTestCase {
             expect.fulfill()
         }
 
-        waitForExpectations(timeout: 1, handler: nil)
+        waitForExpectations(timeout: 0.1, handler: nil)
     }
 
     func testRelayFired() {
@@ -26,6 +26,6 @@ final class RelayTests: XCTestCase {
 
         relay.fire()
 
-        waitForExpectations(timeout: 1, handler: nil)
+        waitForExpectations(timeout: 0.1, handler: nil)
     }
 }
