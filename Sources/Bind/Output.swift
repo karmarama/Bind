@@ -211,8 +211,8 @@ public extension Output {
      - Parameter initial: The value to use as the initial accumulating value.
      initialResult is passed to nextPartialResult the first time the closure is executed.
      - Parameter nextPartialResult:
-     A closure that combines an accumulating value and the next value of the Output into a new accumulating value that is then
-     output to any binders.
+     A closure that combines an accumulating value and the next value of the Output into a new accumulating
+     value that is then output to any binders.
      - Returns: A new `Output` which acts as a tap of the combined accumulating values
      */
     func reduce<Result>(initial: Result, nextPartialResult: @escaping (Result, Value) -> Result) -> Output<Result> {

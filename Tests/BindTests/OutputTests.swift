@@ -49,23 +49,6 @@ final class OutputTests: XCTestCase {
         XCTAssertEqual(testObjectTwo.text, "Test")
     }
 
-    func testToggleWithValue() {
-        let output = Output(value: true)
-        XCTAssertEqual(output.latest, true)
-
-        output.invert()
-
-        XCTAssertEqual(output.latest, false)
-    }
-
-    func testToggleWithNoValue() {
-        let output = Output<Bool>()
-        XCTAssertNil(output.latest)
-
-        output.invert()
-        XCTAssertNil(output.latest)
-    }
-
     func testUnbind() {
         let testObject = BindableMock()
 
@@ -356,8 +339,6 @@ final class OutputTests: XCTestCase {
         ("testInitialValue", testInitialValue),
         ("testBinderIsCalled", testBinderIsCalled),
         ("testMultipleBinderIsCalled", testMultipleBinderIsCalled),
-        ("testToggleWithValue", testToggleWithValue),
-        ("testToggleWithNoValue", testToggleWithNoValue),
         ("testUnbind", testUnbind),
         ("testCombine", testCombine),
         ("testMap", testMap),
