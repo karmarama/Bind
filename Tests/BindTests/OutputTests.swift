@@ -204,7 +204,7 @@ final class OutputTests: XCTestCase {
 
         value.update(withValue: .one)
         XCTAssertEqual(mappedValue.latest, "one")
-                }
+    }
 
     func testFlatMap() {
         //swiftlint:disable:next nesting
