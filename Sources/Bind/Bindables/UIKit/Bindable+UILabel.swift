@@ -13,7 +13,7 @@ public extension Bindable where TargetType: UILabel {
             label.textColor = textColor
         }
     }
-    
+
     var attributedText: Binder<NSAttributedString?> {
         return Binder<NSAttributedString?>(self.target) { label, attributedText in
             label.attributedText = attributedText

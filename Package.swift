@@ -7,10 +7,10 @@ let package = Package(
     name: "Trigger",
     products: [
         .library(
-            name: "Trigger", targets: ["Trigger"]),
+            name: "Trigger", targets: ["Trigger"])
     ],
     targets: [
         .target( name: "Trigger"),
-        .testTarget( name: "TriggerTests",dependencies: ["Trigger"])
+        .testTarget( name: "TriggerTests", dependencies: ["Trigger"])
     ]
 )

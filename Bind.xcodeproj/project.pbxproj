@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0014E80F792966285A5A0BD5 /* Bindable+UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */; };
-		01E5833DB935E59214FC2136 /* TriggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */; };
+		01E5833DB935E59214FC2136 /* OutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* OutputTests.swift */; };
 		09C97810D516C764A809157B /* Bind.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE2FBD83FC521B3DF7C7D58A /* Bind.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A920FECAE068974826139B5 /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA90802ED919DAACC99253 /* Output.swift */; };
 		0AF92A8DD7524AA8424B0F69 /* Bind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2FBD83FC521B3DF7C7D58A /* Bind.framework */; };
-		0B45047050F5C9C35397C4BF /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
 		0CFF86D7A18A5931DA443039 /* Bindable+UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */; };
 		0DA9C3D0F120BD02D2CE2CAF /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA90802ED919DAACC99253 /* Output.swift */; };
 		0EB23076233B801500C5B7CB /* Bindable+WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB23075233B801500C5B7CB /* Bindable+WKWebView.swift */; };
@@ -21,15 +20,15 @@
 		0EB23079233B801500C5B7CB /* Bindable+WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB23075233B801500C5B7CB /* Bindable+WKWebView.swift */; };
 		12975D55C4A04954247EDA63 /* Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32482625AD59C787BA656EA9 /* Relay.swift */; };
 		16A74E3909561470C3EABEB3 /* Bindable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */; };
-		16B22C259512A6A4DB492648 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* TestObject.swift */; };
+		16B22C259512A6A4DB492648 /* BindableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* BindableMock.swift */; };
 		195CCADA3A98DB436ED87026 /* Bindable+UIPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9A79B13F8E8757056BC49 /* Bindable+UIPageControl.swift */; };
 		1B34DCB8489C4742C3E741F0 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC86018CB4D8A0C09811160 /* Binder.swift */; };
-		1DB68B189147E165DF6BB137 /* TriggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */; };
+		1DB68B189147E165DF6BB137 /* OutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* OutputTests.swift */; };
 		23ED5475B3FF87CBAF7B1701 /* Output+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2425FC75B8AD6ADF29DDB687 /* Output+Extension.swift */; };
-		28AB432723BFCC656F66C488 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* TestObject.swift */; };
+		28AB432723BFCC656F66C488 /* BindableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* BindableMock.swift */; };
 		2B33B8AA6FB604B75E1038EF /* Bindable+UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942663303E9CBE59E3B4530 /* Bindable+UIControl.swift */; };
 		2B60913E3707890204F2F6DF /* Bind.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0EFACDD491A2047FE3D4814 /* Bind.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2D1C7E116D41AC6269445022 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* TestObject.swift */; };
+		2D1C7E116D41AC6269445022 /* BindableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* BindableMock.swift */; };
 		324DAEC405E4E996EE0B37E3 /* Bindable+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */; };
 		327ECA48E5FC21CDBE38BF59 /* Bindable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7896317935838D7E5621F /* Bindable+UIButton.swift */; };
 		32E4D37CE5094C0784B059B8 /* Bindable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */; };
@@ -44,8 +43,7 @@
 		3DF39D79269B68404056F9F0 /* Bindable+UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6726D9B070B7961E9E60F8 /* Bindable+UINavigationItem.swift */; };
 		4013160F0DA927102E0A4028 /* PrinterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */; };
 		41B2CFF1147DB924DB2F7238 /* Bindable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */; };
-		42DCB57764A902476445A1ED /* TriggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */; };
-		46C05FB016E9D3B8E4BE6186 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
+		42DCB57764A902476445A1ED /* OutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* OutputTests.swift */; };
 		49E0D1227B1320BE23158F90 /* Bindable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */; };
 		4A3D96DE7A62AD7FAE8A103A /* Bindable+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */; };
 		51276A88F751D64318F272D8 /* Bindable+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */; };
@@ -61,7 +59,7 @@
 		6C89FD65903E3C9BFEFB8566 /* Bindable+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BCBA1C96D1499A2368C6C4 /* Bindable+UIViewController.swift */; };
 		6E66460B09EB276CFC02552F /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC86018CB4D8A0C09811160 /* Binder.swift */; };
 		6F644F4AF6D7A0CEEA35985A /* Bindable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */; };
-		6F853E9E0052D86B01B6F4F3 /* TriggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */; };
+		6F853E9E0052D86B01B6F4F3 /* OutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37E541BF3AF26462B57BAF0 /* OutputTests.swift */; };
 		717B0255BF2FC2896C38FE10 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D15DAC79B1AC76785DF873 /* Subscription.swift */; };
 		733A22C87BFD19E44079AAD2 /* Bindable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7896317935838D7E5621F /* Bindable+UIButton.swift */; };
 		7944093D5AE963218BC63113 /* Bindable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A119B08E34E14B858E97F1 /* Bindable+UIView.swift */; };
@@ -70,14 +68,23 @@
 		803EFBE2121F0F2887A9652B /* Bindable+UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */; };
 		812CDA7052B612388268AA65 /* Bindable+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */; };
 		82A3BE668A9A1F660BD8F9C7 /* Bindable+UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4942663303E9CBE59E3B4530 /* Bindable+UIControl.swift */; };
+		8755A73D23479B5700C8AD07 /* BindableTestsUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A73C23479B5700C8AD07 /* BindableTestsUIKit.swift */; };
+		8755A73F2347A88D00C8AD07 /* RelayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A73E2347A88D00C8AD07 /* RelayTests.swift */; };
+		8755A7412347A92500C8AD07 /* SubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A7402347A92500C8AD07 /* SubscriptionTests.swift */; };
+		8755A7422347A93400C8AD07 /* SubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A7402347A92500C8AD07 /* SubscriptionTests.swift */; };
+		8755A7432347A93400C8AD07 /* SubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A7402347A92500C8AD07 /* SubscriptionTests.swift */; };
+		8755A7442347A93500C8AD07 /* SubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A7402347A92500C8AD07 /* SubscriptionTests.swift */; };
+		8755A7452347A93700C8AD07 /* RelayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A73E2347A88D00C8AD07 /* RelayTests.swift */; };
+		8755A7462347A93800C8AD07 /* RelayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A73E2347A88D00C8AD07 /* RelayTests.swift */; };
+		8755A7472347A93800C8AD07 /* RelayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A73E2347A88D00C8AD07 /* RelayTests.swift */; };
+		8755A7482347A93E00C8AD07 /* BindableTestsUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8755A73C23479B5700C8AD07 /* BindableTestsUIKit.swift */; };
 		8774D75FE1168D2F1D4CE056 /* Bindable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */; };
 		8916D29F0AEF2B864EED6B53 /* Bindable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */; };
 		8A9566D706D206E76327E3DB /* Bindable+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */; };
 		9015E14D3A62FB45789219B3 /* Bindable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */; };
-		9242D8FF64743A5179429422 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
 		9320C85A024298682EE5EB24 /* Bindable+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */; };
 		9A39C0AAE8EEE138E29862EB /* Bindable+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */; };
-		9D059CF3C7783B55F63C17CB /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* TestObject.swift */; };
+		9D059CF3C7783B55F63C17CB /* BindableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCF98045AC9F17CD5EF1563 /* BindableMock.swift */; };
 		9E3F9C519BDF52F59CEE559D /* Bindable+UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3A366761CF271F4BB17DD /* Bindable+UIGestureRecognizer.swift */; };
 		9F1B1E2534DF633A17B19C3F /* Bindable+UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3A366761CF271F4BB17DD /* Bindable+UIGestureRecognizer.swift */; };
 		9F1C8776143143FE7E7260E2 /* Bindable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */; };
@@ -118,7 +125,6 @@
 		F5413A858E91952D871D059C /* Bind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0165DC94BFE99BD3D3A96707 /* Bind.framework */; };
 		F5D1EB844669593072D92813 /* Bindable+UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6726D9B070B7961E9E60F8 /* Bindable+UINavigationItem.swift */; };
 		F788AA106AEF18EA67BB2F9F /* Bindable+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */; };
-		F8D680F76C8E320CC2E8867A /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */; };
 		FBB9F4C238F1A766E8DF9417 /* Bind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EFACDD491A2047FE3D4814 /* Bind.framework */; };
 		FBF24AD8797A54817F724F1B /* PrinterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */; };
 		FCA3E90C3CF087E74F120579 /* Bindable+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */; };
@@ -205,40 +211,42 @@
 
 /* Begin PBXFileReference section */
 		0165DC94BFE99BD3D3A96707 /* Bind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UITextField.swift"; sourceTree = "<group>"; };
-		07C9A79B13F8E8757056BC49 /* Bindable+UIPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIPageControl.swift"; sourceTree = "<group>"; };
-		0EB23075233B801500C5B7CB /* Bindable+WKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+WKWebView.swift"; sourceTree = "<group>"; };
+		027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UITextField.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		07C9A79B13F8E8757056BC49 /* Bindable+UIPageControl.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIPageControl.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		0EB23075233B801500C5B7CB /* Bindable+WKWebView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+WKWebView.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		0EB2307A233BB2CC00C5B7CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UISearchBar.swift"; sourceTree = "<group>"; };
-		0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
-		1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UITabBar.swift"; sourceTree = "<group>"; };
+		0EFE7C85A16ABA965037F833 /* Bindable+UISearchBar.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UISearchBar.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		123B88BAEC15153FF30DDF5E /* Bindable+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIActivityIndicatorView.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		1397A96B88FD8D77EED899B1 /* Bindable+UITabBar.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UITabBar.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		1D43A8B1E435FD4D1A2E97F9 /* BindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E6726D9B070B7961E9E60F8 /* Bindable+UINavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UINavigationItem.swift"; sourceTree = "<group>"; };
-		1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UILabel.swift"; sourceTree = "<group>"; };
-		2425FC75B8AD6ADF29DDB687 /* Output+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Output+Extension.swift"; sourceTree = "<group>"; };
-		32482625AD59C787BA656EA9 /* Relay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relay.swift; sourceTree = "<group>"; };
-		3DDA90802ED919DAACC99253 /* Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
-		4942663303E9CBE59E3B4530 /* Bindable+UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIControl.swift"; sourceTree = "<group>"; };
+		1E6726D9B070B7961E9E60F8 /* Bindable+UINavigationItem.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UINavigationItem.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		1E8B8A3AE507973B94E0E2A1 /* Bindable+UILabel.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UILabel.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		2425FC75B8AD6ADF29DDB687 /* Output+Extension.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Output+Extension.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		32482625AD59C787BA656EA9 /* Relay.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Relay.swift; sourceTree = "<group>"; tabWidth = 4; };
+		3DDA90802ED919DAACC99253 /* Output.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; tabWidth = 4; };
+		4942663303E9CBE59E3B4530 /* Bindable+UIControl.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIControl.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		528A8BC5BC105E09FB2A15EC /* BindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		573E0E19C014B4EE5106A0F2 /* Bind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterMock.swift; sourceTree = "<group>"; };
-		66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UISwitch.swift"; sourceTree = "<group>"; };
-		6CC3A366761CF271F4BB17DD /* Bindable+UIGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIGestureRecognizer.swift"; sourceTree = "<group>"; };
-		87BCBA1C96D1499A2368C6C4 /* Bindable+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIViewController.swift"; sourceTree = "<group>"; };
-		8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIImageView.swift"; sourceTree = "<group>"; };
+		643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = PrinterMock.swift; sourceTree = "<group>"; tabWidth = 4; };
+		66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UISwitch.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		6CC3A366761CF271F4BB17DD /* Bindable+UIGestureRecognizer.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIGestureRecognizer.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		8755A73C23479B5700C8AD07 /* BindableTestsUIKit.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = BindableTestsUIKit.swift; sourceTree = "<group>"; tabWidth = 4; };
+		8755A73E2347A88D00C8AD07 /* RelayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayTests.swift; sourceTree = "<group>"; };
+		8755A7402347A92500C8AD07 /* SubscriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTests.swift; sourceTree = "<group>"; };
+		87BCBA1C96D1499A2368C6C4 /* Bindable+UIViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIViewController.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		8C9B94AF56A71DFBCA50413B /* Bindable+UIImageView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIImageView.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		91D93EE6FE99882FF6B5A4E3 /* BindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EFACDD491A2047FE3D4814 /* Bind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAC86018CB4D8A0C09811160 /* Binder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; };
-		B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UISegmentedControl.swift"; sourceTree = "<group>"; };
+		AAC86018CB4D8A0C09811160 /* Binder.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Binder.swift; sourceTree = "<group>"; tabWidth = 4; };
+		B023C1C41770B45A76264BE6 /* Bindable+UISegmentedControl.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UISegmentedControl.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		B2381BE056DBA63EB6356D5C /* BindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2F7896317935838D7E5621F /* Bindable+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIButton.swift"; sourceTree = "<group>"; };
-		B4A119B08E34E14B858E97F1 /* Bindable+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UIView.swift"; sourceTree = "<group>"; };
-		B5D15DAC79B1AC76785DF873 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
-		DBCF98045AC9F17CD5EF1563 /* TestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
-		E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+UITabBarController.swift"; sourceTree = "<group>"; };
-		F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerTests.swift; sourceTree = "<group>"; };
-		FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		B2F7896317935838D7E5621F /* Bindable+UIButton.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIButton.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		B4A119B08E34E14B858E97F1 /* Bindable+UIView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIView.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		B5D15DAC79B1AC76785DF873 /* Subscription.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; tabWidth = 4; };
+		DBCF98045AC9F17CD5EF1563 /* BindableMock.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = BindableMock.swift; sourceTree = "<group>"; tabWidth = 4; };
+		E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UITabBarController.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		F37E541BF3AF26462B57BAF0 /* OutputTests.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = OutputTests.swift; sourceTree = "<group>"; tabWidth = 4; };
+		FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+NSLayoutConstraint.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		FE2FBD83FC521B3DF7C7D58A /* Bind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -281,11 +289,11 @@
 		0A1B0977579D0F9CDC9CD370 /* Bind */ = {
 			isa = PBXGroup;
 			children = (
+				8755A7382347984100C8AD07 /* Bindables */,
 				AAC86018CB4D8A0C09811160 /* Binder.swift */,
 				32482625AD59C787BA656EA9 /* Relay.swift */,
 				B5D15DAC79B1AC76785DF873 /* Subscription.swift */,
 				3DDA90802ED919DAACC99253 /* Output.swift */,
-				659692C42FBAC58E81D2F7C8 /* UIKit */,
 			);
 			path = Bind;
 			sourceTree = "<group>";
@@ -318,7 +326,6 @@
 				027C192FC1BC3411C3AEB629 /* Bindable+UITextField.swift */,
 				B4A119B08E34E14B858E97F1 /* Bindable+UIView.swift */,
 				87BCBA1C96D1499A2368C6C4 /* Bindable+UIViewController.swift */,
-				0EB23075233B801500C5B7CB /* Bindable+WKWebView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -330,10 +337,44 @@
 				46786E68047562EAE2054B15 /* Tests */,
 				F8A4B71E618469AE8D34DC6C /* Products */,
 			);
-			indentWidth = 2;
+			indentWidth = 4;
 			sourceTree = "<group>";
-			tabWidth = 2;
+			tabWidth = 4;
 			usesTabs = 0;
+		};
+		8755A7382347984100C8AD07 /* Bindables */ = {
+			isa = PBXGroup;
+			children = (
+				8755A7392347984800C8AD07 /* Other */,
+				659692C42FBAC58E81D2F7C8 /* UIKit */,
+			);
+			path = Bindables;
+			sourceTree = "<group>";
+		};
+		8755A7392347984800C8AD07 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0EB23075233B801500C5B7CB /* Bindable+WKWebView.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8755A73A2347996A00C8AD07 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2425FC75B8AD6ADF29DDB687 /* Output+Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8755A73B2347997A00C8AD07 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */,
+				DBCF98045AC9F17CD5EF1563 /* BindableMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
 		};
 		87E5943FEFAFA77DB95362C7 /* Sources */ = {
 			isa = PBXGroup;
@@ -347,11 +388,12 @@
 		EF9A5E0E64D40EF1055B650C /* BindTests */ = {
 			isa = PBXGroup;
 			children = (
-				643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */,
-				DBCF98045AC9F17CD5EF1563 /* TestObject.swift */,
-				2425FC75B8AD6ADF29DDB687 /* Output+Extension.swift */,
-				F37E541BF3AF26462B57BAF0 /* TriggerTests.swift */,
-				0F82DF6C46B15C39FB63B608 /* XCTestManifests.swift */,
+				8755A73B2347997A00C8AD07 /* Mock */,
+				8755A73A2347996A00C8AD07 /* Helpers */,
+				F37E541BF3AF26462B57BAF0 /* OutputTests.swift */,
+				8755A73E2347A88D00C8AD07 /* RelayTests.swift */,
+				8755A7402347A92500C8AD07 /* SubscriptionTests.swift */,
+				8755A73C23479B5700C8AD07 /* BindableTestsUIKit.swift */,
 			);
 			path = BindTests;
 			sourceTree = "<group>";
@@ -415,6 +457,7 @@
 			buildConfigurationList = 9CC0B9A3919ACD1F571B2BD9 /* Build configuration list for PBXNativeTarget "Bind_watchOS" */;
 			buildPhases = (
 				DC06B4AD4D937357639D76B6 /* Sources */,
+				8755A7372347961600C8AD07 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -430,6 +473,7 @@
 			buildConfigurationList = 066016ECB25C1A9984BCDFA9 /* Build configuration list for PBXNativeTarget "Bind_iOS" */;
 			buildPhases = (
 				74BBD3BC73B89FBB506D7DF3 /* Sources */,
+				8755A734234795EE00C8AD07 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -463,6 +507,7 @@
 			buildConfigurationList = 9ECBF332D78BD409EB9D2C28 /* Build configuration list for PBXNativeTarget "Bind_tvOS" */;
 			buildPhases = (
 				2AE00070F5487DFCC7BF5667 /* Sources */,
+				8755A7362347960A00C8AD07 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -478,6 +523,7 @@
 			buildConfigurationList = 9EFAAA9C50F1813C278BBD8A /* Build configuration list for PBXNativeTarget "Bind_macOS" */;
 			buildPhases = (
 				CD3696A03623CB324058E3D5 /* Sources */,
+				8755A7352347960000C8AD07 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -538,16 +584,93 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8755A734234795EE00C8AD07 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint --strict\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		8755A7352347960000C8AD07 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint --strict\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		8755A7362347960A00C8AD07 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint --strict\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		8755A7372347961600C8AD07 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint --strict\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2009FB2D4114B8F7211BE2AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DEEB7E76CA6E133DCE59BD82 /* PrinterMock.swift in Sources */,
-				2D1C7E116D41AC6269445022 /* TestObject.swift in Sources */,
+				8755A73F2347A88D00C8AD07 /* RelayTests.swift in Sources */,
+				8755A7412347A92500C8AD07 /* SubscriptionTests.swift in Sources */,
+				2D1C7E116D41AC6269445022 /* BindableMock.swift in Sources */,
 				637549C2D38B6A9E34E3C05E /* Output+Extension.swift in Sources */,
-				01E5833DB935E59214FC2136 /* TriggerTests.swift in Sources */,
-				9242D8FF64743A5179429422 /* XCTestManifests.swift in Sources */,
+				8755A73D23479B5700C8AD07 /* BindableTestsUIKit.swift in Sources */,
+				01E5833DB935E59214FC2136 /* OutputTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,10 +737,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4013160F0DA927102E0A4028 /* PrinterMock.swift in Sources */,
-				16B22C259512A6A4DB492648 /* TestObject.swift in Sources */,
+				8755A7472347A93800C8AD07 /* RelayTests.swift in Sources */,
+				16B22C259512A6A4DB492648 /* BindableMock.swift in Sources */,
 				F37FB2DC1E254424AC2BAE03 /* Output+Extension.swift in Sources */,
-				1DB68B189147E165DF6BB137 /* TriggerTests.swift in Sources */,
-				F8D680F76C8E320CC2E8867A /* XCTestManifests.swift in Sources */,
+				1DB68B189147E165DF6BB137 /* OutputTests.swift in Sources */,
+				8755A7442347A93500C8AD07 /* SubscriptionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,10 +808,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8428486B13DF705F151FDD6 /* PrinterMock.swift in Sources */,
-				28AB432723BFCC656F66C488 /* TestObject.swift in Sources */,
+				8755A7452347A93700C8AD07 /* RelayTests.swift in Sources */,
+				28AB432723BFCC656F66C488 /* BindableMock.swift in Sources */,
 				B603ED1DF83FB4467FB9B868 /* Output+Extension.swift in Sources */,
-				6F853E9E0052D86B01B6F4F3 /* TriggerTests.swift in Sources */,
-				0B45047050F5C9C35397C4BF /* XCTestManifests.swift in Sources */,
+				6F853E9E0052D86B01B6F4F3 /* OutputTests.swift in Sources */,
+				8755A7482347A93E00C8AD07 /* BindableTestsUIKit.swift in Sources */,
+				8755A7422347A93400C8AD07 /* SubscriptionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,10 +822,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF24AD8797A54817F724F1B /* PrinterMock.swift in Sources */,
-				9D059CF3C7783B55F63C17CB /* TestObject.swift in Sources */,
+				8755A7462347A93800C8AD07 /* RelayTests.swift in Sources */,
+				9D059CF3C7783B55F63C17CB /* BindableMock.swift in Sources */,
 				23ED5475B3FF87CBAF7B1701 /* Output+Extension.swift in Sources */,
-				42DCB57764A902476445A1ED /* TriggerTests.swift in Sources */,
-				46C05FB016E9D3B8E4BE6186 /* XCTestManifests.swift in Sources */,
+				42DCB57764A902476445A1ED /* OutputTests.swift in Sources */,
+				8755A7432347A93400C8AD07 /* SubscriptionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -860,6 +987,7 @@
 					"$(inherited)",
 					"DEBUG=1",
 				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1125,6 +1253,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
