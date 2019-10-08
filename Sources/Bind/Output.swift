@@ -187,6 +187,12 @@ public extension Output {
             return output
     }
 
+    /**
+     `filter` passes the Value through a predicate, if the functions true the `Value` is output, otherwise
+     it is filtered out.
+     - Parameter filter: The function that predicates on the `Value` to determine if it is output
+     - Returns: A new `Output` which predicates on the `Value` before outputting
+     */
     func filter(_ filter: @escaping (Value) -> Bool) -> Output<Value> {
         let output = Output<Value>()
 
@@ -198,14 +204,25 @@ public extension Output {
 
         return output
     }
-}
 
-// MARK: - Typed extensions
-public extension Output where Value == Bool {
-    func invert() {
-        guard let currentValue = value else {
-            return
+    /**
+     Returns a new output that is the result of combining the outputted elements of the receiver
+     using the given closure.
+     - Parameter initial: The value to use as the initial accumulating value.
+     initialResult is passed to nextPartialResult the first time the closure is executed.
+     - Parameter nextPartialResult:
+     A closure that combines an accumulating value and the next value of the Output into a new accumulating
+     value that is then output to any binders.
+     - Returns: A new `Output` which acts as a tap of the combined accumulating values
+     */
+    func reduce<Result>(initial: Result, nextPartialResult: @escaping (Result, Value) -> Result) -> Output<Result> {
+        let output = Output<Result>()
+
+        bind { value in
+            let result = nextPartialResult(output.value ?? initial, value)
+            output.update(withValue: result)
         }
-        update(withValue: !currentValue)
+
+        return output
     }
 }

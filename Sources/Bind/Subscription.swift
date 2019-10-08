@@ -29,7 +29,7 @@ extension Subscription: Hashable {
 }
 
 public final class SubscriptionContainer {
-    private var container: [Subscription] = []
+    var container: [Subscription] = []
 
     public init() {}
 
@@ -41,5 +41,7 @@ public final class SubscriptionContainer {
         for subscription in container {
             subscription.unsubscribe()
         }
+
+        container = []
     }
 }

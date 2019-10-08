@@ -49,23 +49,6 @@ final class OutputTests: XCTestCase {
         XCTAssertEqual(testObjectTwo.text, "Test")
     }
 
-    func testToggleWithValue() {
-        let output = Output(value: true)
-        XCTAssertEqual(output.latest, true)
-
-        output.invert()
-
-        XCTAssertEqual(output.latest, false)
-    }
-
-    func testToggleWithNoValue() {
-        let output = Output<Bool>()
-        XCTAssertNil(output.latest)
-
-        output.invert()
-        XCTAssertNil(output.latest)
-    }
-
     func testUnbind() {
         let testObject = BindableMock()
 
@@ -221,7 +204,7 @@ final class OutputTests: XCTestCase {
 
         value.update(withValue: .one)
         XCTAssertEqual(mappedValue.latest, "one")
-                }
+    }
 
     func testFlatMap() {
         //swiftlint:disable:next nesting
@@ -290,6 +273,40 @@ final class OutputTests: XCTestCase {
 
         output2.update(withValue: 5)
         XCTAssertEqual(merge.latest, 5)
+    }
+
+    func testReduceReferenceType() {
+        class TestObject { //swiftlint:disable:this nesting
+            var currentString: String = ""
+        }
+
+        let initial = Output<Int>()
+
+        let reduced = initial
+            .reduce(initial: TestObject()) { current, number -> TestObject in
+                var currentString = current.currentString
+                currentString += "\(number)"
+                current.currentString = currentString
+                return current
+            }
+
+        for value in [1, 2, 3, 4, 5] {
+            initial.update(withValue: value)
+        }
+
+        XCTAssertEqual(reduced.latest?.currentString, "12345")
+    }
+
+    func testReduceValueType() {
+        let initial = Output<Int>()
+
+        let reduced = initial.reduce(initial: 0, nextPartialResult: +)
+
+        for value in [1, 2, 3, 4, 5] {
+            initial.update(withValue: value)
+        }
+
+        XCTAssertEqual(reduced.latest, 15)
     }
 
     func testDebug() {
