@@ -10,9 +10,9 @@ final class BindableTestsUIKit: XCTestCase {
         label.textColor = .black
         let attributedLabel = UILabel()
 
-        let textOutput = Output<String>()
-        let textColorOutput = Output<UIColor>()
-        let attributedTextOutput = Output<NSAttributedString?>()
+        let textOutput = MutableOutput<String>()
+        let textColorOutput = MutableOutput<UIColor>()
+        let attributedTextOutput = MutableOutput<NSAttributedString?>()
 
         textOutput.bind(to: label.binding.text)
         textColorOutput.bind(to: label.binding.textColor)
@@ -34,12 +34,12 @@ final class BindableTestsUIKit: XCTestCase {
     func testViewBools() {
         let view = UIView()
 
-        let hiddenOutput = Output<Bool>()
-        let visibleOutput = Output<Bool>()
-        let visibleAlpha = Output<Bool>()
-        let visibleAlphaAnimated = Output<Bool>()
-        let userInteractionEnabledOutput = Output<Bool>()
-        let constraintsActive = Output<Bool>()
+        let hiddenOutput = MutableOutput<Bool>()
+        let visibleOutput = MutableOutput<Bool>()
+        let visibleAlpha = MutableOutput<Bool>()
+        let visibleAlphaAnimated = MutableOutput<Bool>()
+        let userInteractionEnabledOutput = MutableOutput<Bool>()
+        let constraintsActive = MutableOutput<Bool>()
 
         hiddenOutput.bind(to: view.binding.isHidden)
         visibleOutput.bind(to: view.binding.isVisible)
@@ -78,9 +78,9 @@ final class BindableTestsUIKit: XCTestCase {
     func testViewUIColors() {
         let view = UIView()
 
-        let backgroundColorOutput = Output<UIColor>()
-        let borderColorOutput = Output<UIColor>()
-        let tintColorOutput = Output<UIColor>()
+        let backgroundColorOutput = MutableOutput<UIColor>()
+        let borderColorOutput = MutableOutput<UIColor>()
+        let tintColorOutput = MutableOutput<UIColor>()
 
         backgroundColorOutput.bind(to: view.binding.backgroundColor)
         borderColorOutput.bind(to: view.binding.borderColor)
@@ -99,8 +99,8 @@ final class BindableTestsUIKit: XCTestCase {
     func testViewCGFloat() {
         let view = UIView()
 
-        let borderWidthOutput = Output<CGFloat>()
-        let cornerRadiusOutput = Output<CGFloat>()
+        let borderWidthOutput = MutableOutput<CGFloat>()
+        let cornerRadiusOutput = MutableOutput<CGFloat>()
 
         borderWidthOutput.bind(to: view.binding.borderWidth)
         cornerRadiusOutput.bind(to: view.binding.cornerRadius)
@@ -115,7 +115,7 @@ final class BindableTestsUIKit: XCTestCase {
     func testViewString() {
         let view = UIView()
 
-        let accessibilityOutput = Output<String>()
+        let accessibilityOutput = MutableOutput<String>()
 
         accessibilityOutput.bind(to: view.binding.accessibilityIdentifier)
 
