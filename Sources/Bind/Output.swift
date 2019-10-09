@@ -68,6 +68,21 @@ public class Output<Value>: Unbindable {
         return subscription
     }
 
+    /**
+     `initial` allows the caller to specify an initial value to be populated into the Output through another mechanism
+     other than the initialiser. If a value is already populated, this function just returns the receiver without doing
+     anything
+     - Parameter value: The initial value
+     - Returns: The same Output but with the initial value populated
+     */
+    public func initial(_ value: Value) -> Output<Value> {
+        if self.value == nil {
+            update(withValue: value)
+        }
+
+        return self
+    }
+
     public func debug(identifier: String) -> Output<Value> {
         debugIdentifier = identifier
         return self

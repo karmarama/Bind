@@ -309,6 +309,30 @@ final class OutputTests: XCTestCase {
         XCTAssertEqual(reduced.latest, 15)
     }
 
+    func testInitialValueFunctionChain() {
+        let initial = Output<Int>().initial(10)
+        XCTAssertEqual(initial.latest, 10)
+
+        let alreadyPopulated = Output<Int>(value: 5).initial(10)
+        XCTAssertEqual(alreadyPopulated.latest, 5)
+
+        let left = Output(value: 3)
+        let right = Output<Int>()
+
+        let combined = Output
+            .combine(left, right)
+            .map(+)
+            .initial(20)
+
+        XCTAssertEqual(combined.latest, 20)
+
+        left.update(withValue: 4)
+        XCTAssertEqual(combined.latest, 20)
+
+        right.update(withValue: 6)
+        XCTAssertEqual(combined.latest, 10)
+    }
+
     func testDebug() {
         let printer = PrinterMock()
         let output1 = Output<Bool>(printer: printer)
