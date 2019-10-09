@@ -3,14 +3,14 @@ import XCTest
 
 final class OutputTests: XCTestCase {
     func testInitialNoValue() {
-        let output = Output<String>()
+        let output = MutableOutput<String>()
         output.bind { _ in
             XCTFail("should not be called as Output has no value set")
         }
     }
 
     func testInitialValue() {
-        let output = Output<String>(value: "Test")
+        let output = MutableOutput<String>(value: "Test")
         var closureCalled: Bool = false
         output.debug(identifier: "123").bind { value in
             XCTAssertEqual("Test", value)
@@ -22,7 +22,7 @@ final class OutputTests: XCTestCase {
     func testBinderIsCalled() {
         let testObject = BindableMock()
 
-        let output = Output<String>()
+        let output = MutableOutput<String>()
         output.bind(to: testObject.binding.text)
 
         XCTAssertNil(testObject.text)
@@ -36,7 +36,7 @@ final class OutputTests: XCTestCase {
         let testObjectOne = BindableMock()
         let testObjectTwo = BindableMock()
 
-        let output = Output<String>()
+        let output = MutableOutput<String>()
         output.bind(to: [testObjectOne.binding.text,
                          testObjectTwo.binding.text])
 
@@ -52,7 +52,7 @@ final class OutputTests: XCTestCase {
     func testUnbind() {
         let testObject = BindableMock()
 
-        let output = Output<String>()
+        let output = MutableOutput<String>()
         let subscription = output.bind(to: testObject.binding.text)
 
         XCTAssertNil(testObject.text)
@@ -69,13 +69,13 @@ final class OutputTests: XCTestCase {
     }
 
     func testCombine() {
-        let output1 = Output<Bool>()
-        let output2 = Output<Bool>()
+        let output1 = MutableOutput<Bool>()
+        let output2 = MutableOutput<Bool>()
 
         var outputValue1: Bool?
         var outputValue2: Bool?
 
-        Output<Bool>.combine(output1, output2).bind { value1, value2 in
+        MutableOutput<Bool>.combine(output1, output2).bind { value1, value2 in
             outputValue1 = value1
             outputValue2 = value2
         }
@@ -100,15 +100,15 @@ final class OutputTests: XCTestCase {
     }
 
     func testCombineArray() {
-        let output1 = Output<Bool>()
-        let output2 = Output<Bool>()
-        let output3 = Output<Bool>()
+        let output1 = MutableOutput<Bool>()
+        let output2 = MutableOutput<Bool>()
+        let output3 = MutableOutput<Bool>()
 
         var outputValue1: Bool?
         var outputValue2: Bool?
         var outputValue3: Bool?
 
-        Output<Bool>.combine(outputs: [output1, output2, output3]).bind { valuesArray in
+        MutableOutput<Bool>.combine(outputs: [output1, output2, output3]).bind { valuesArray in
             outputValue1 = valuesArray[0]
             outputValue2 = valuesArray[1]
             outputValue3 = valuesArray[2]
@@ -144,13 +144,13 @@ final class OutputTests: XCTestCase {
     }
 
     func testCombineTwoTypes() {
-        let output1 = Output<Bool>()
-        let output2 = Output<String>()
+        let output1 = MutableOutput<Bool>()
+        let output2 = MutableOutput<String>()
 
         var outputValue1: Bool?
         var outputValue2: String?
 
-        Output<Bool>
+        MutableOutput<Bool>
             .combine(output1, output2)
             .bind { value1, value2 in
                 outputValue1 = value1
@@ -183,9 +183,9 @@ final class OutputTests: XCTestCase {
             case two
         }
 
-        let value = Output<TestEnum>()
+        let value = MutableOutput<TestEnum>()
 
-        let mappedValue: Output<String> =
+        let mappedValue: MutableOutput<String> =
             value
                 .map { type in
                     switch type {
@@ -195,6 +195,7 @@ final class OutputTests: XCTestCase {
                         return "two"
                     }
                 }
+                .asMutable()
 
         value.update(withValue: .one)
         XCTAssertEqual(mappedValue.latest, "one")
@@ -213,9 +214,9 @@ final class OutputTests: XCTestCase {
             case two
         }
 
-        let value = Output<TestEnum>()
+        let value = MutableOutput<TestEnum>()
 
-        let mappedValue: Output<String> =
+        let mappedValue: MutableOutput<String> =
             value
                 .flatMap { type in
                     switch type {
@@ -225,6 +226,7 @@ final class OutputTests: XCTestCase {
                         return Output(value: "two")
                     }
                 }
+                .asMutable()
 
         value.update(withValue: .one)
         XCTAssertEqual(mappedValue.latest, "one")
@@ -237,7 +239,7 @@ final class OutputTests: XCTestCase {
     }
 
     func testFilter() {
-        let value = Output<String>()
+        let value = MutableOutput<String>()
 
         let filteredValue = value
             .filter { string in
@@ -255,8 +257,8 @@ final class OutputTests: XCTestCase {
     }
 
     func testMerge() {
-        let output1 = Output<Int>()
-        let output2 = Output<Int>()
+        let output1 = MutableOutput<Int>()
+        let output2 = MutableOutput<Int>()
 
         let merge = Output.merge(output1, output2)
 
@@ -280,7 +282,7 @@ final class OutputTests: XCTestCase {
             var currentString: String = ""
         }
 
-        let initial = Output<Int>()
+        let initial = MutableOutput<Int>()
 
         let reduced = initial
             .reduce(initial: TestObject()) { current, number -> TestObject in
@@ -298,7 +300,7 @@ final class OutputTests: XCTestCase {
     }
 
     func testReduceValueType() {
-        let initial = Output<Int>()
+        let initial = MutableOutput<Int>()
 
         let reduced = initial.reduce(initial: 0, nextPartialResult: +)
 
@@ -310,16 +312,16 @@ final class OutputTests: XCTestCase {
     }
 
     func testInitialValueFunctionChain() {
-        let initial = Output<Int>().initial(10)
+        let initial = MutableOutput<Int>().initial(10)
         XCTAssertEqual(initial.latest, 10)
 
-        let alreadyPopulated = Output<Int>(value: 5).initial(10)
+        let alreadyPopulated = MutableOutput<Int>(value: 5).initial(10)
         XCTAssertEqual(alreadyPopulated.latest, 5)
 
-        let left = Output(value: 3)
-        let right = Output<Int>()
+        let left = MutableOutput(value: 3)
+        let right = MutableOutput<Int>()
 
-        let combined = Output
+        let combined = MutableOutput
             .combine(left, right)
             .map(+)
             .initial(20)
@@ -335,7 +337,7 @@ final class OutputTests: XCTestCase {
 
     func testDebug() {
         let printer = PrinterMock()
-        let output1 = Output<Bool>(printer: printer)
+        let output1 = MutableOutput<Bool>(printer: printer)
 
         XCTAssertTrue(printer.printValues.isEmpty)
 
@@ -345,16 +347,16 @@ final class OutputTests: XCTestCase {
 
         XCTAssertEqual(printer.printValues.count, 3)
         XCTAssertEqual(printer.printValues[0], "---")
-        XCTAssertEqual(printer.printValues[1], "Binding 123 (Output<Bool>) to (Function)")
+        XCTAssertEqual(printer.printValues[1], "Binding 123 (MutableOutput<Bool>) to (Function)")
         XCTAssertEqual(printer.printValues[2], "To bindings: [Bind.Subscription: (Function)]")
 
         output1.update(withValue: false)
 
         XCTAssertEqual(printer.printValues.count, 8)
         XCTAssertEqual(printer.printValues[3], "---")
-        XCTAssertEqual(printer.printValues[4], "Will update value for 123 (Output<Bool>) to false")
+        XCTAssertEqual(printer.printValues[4], "Will update value for 123 (MutableOutput<Bool>) to false")
         XCTAssertEqual(printer.printValues[5], "To bindings: [Bind.Subscription: (Function)]")
-        XCTAssertEqual(printer.printValues[6], "Did update value for 123 (Output<Bool>) to false")
+        XCTAssertEqual(printer.printValues[6], "Did update value for 123 (MutableOutput<Bool>) to false")
         XCTAssertEqual(printer.printValues[7], "To bindings: [Bind.Subscription: (Function)]")
     }
 }

@@ -17,7 +17,7 @@ public class Output<Value>: Unbindable {
         self.printer = printer
     }
 
-    public func update(withValue value: Value) {
+    fileprivate func update(withValue value: Value) {
         if let identifier = debugIdentifier {
             printer.print("---")
             printer.print("Will update value for \(identifier) (\(type(of: self))) to \(value)")
@@ -91,10 +91,30 @@ public class Output<Value>: Unbindable {
     public func unbind(for subscription: Subscription) {
         observers[subscription] = nil
     }
+
+    /**
+    `asMutable` converts an Output into a MutableOutput of the same Value allowing its value to be updated a later date
+    - Returns: A mutable version of the receiver
+     */
+    public func asMutable() -> MutableOutput<Value> {
+        let mutableOutput = MutableOutput<Value>()
+
+        bind { value in
+            mutableOutput.update(withValue: value)
+        }
+
+        return mutableOutput
+    }
 }
 
 public protocol Printable {
     func print(_ value: String)
+}
+
+public class MutableOutput<Value>: Output<Value> {
+    public override func update(withValue value: Value) {
+        super.update(withValue: value)
+    }
 }
 
 // MARK: - Functional extensions
