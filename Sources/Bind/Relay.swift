@@ -1,4 +1,4 @@
-public final class Relay: MutableOutput<Void> {
+public final class Relay: Output<Void> {
     public func fire() {
         update(withValue: ())
     }
