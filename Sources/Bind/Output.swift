@@ -71,9 +71,11 @@ public class Output<Value>: Unbindable {
     /**
      `initial` allows the caller to specify an initial value to be populated into the Output through another mechanism
      other than the initialiser. If a value is already populated, this function just returns the receiver without doing
-     anything
+     anything.
      - Parameter value: The initial value
      - Returns: The same Output but with the initial value populated
+     - Note: This is useful when needing to setup a functional chain with an initial value that does not
+             trigger the chain to occur, e.g. setting the initial value at the end.
      */
     public func initial(_ value: Value) -> Output<Value> {
         if self.value == nil {
@@ -102,11 +104,12 @@ public extension Output {
     static func combine(outputs: [Output<Value>]) -> Output<[Value]> {
         let returnOutput = Output<[Value]>()
 
-        for output in outputs {
-            output.bind { _ in
-                let values = outputs.compactMap { $0.value }
+        for (offset, output) in outputs.enumerated() {
+            output.bind { value in
+                var values = outputs.compactMap { $0.value }
 
                 if values.count == outputs.count {
+                    values[offset] = value
                     returnOutput.update(withValue: values)
                 }
             }
@@ -239,5 +242,29 @@ public extension Output {
         }
 
         return output
+    }
+}
+
+public extension Output where Value: Equatable {
+
+    /**
+     Returns a new output that filters out any contiguous repeating `Value`.
+     - Returns: A new `Output` which only emits a new value, when the new value is not equal to the previous value
+     */
+    func ignoringDuplicates() -> Output<Value> {
+        let output = Output<Value>()
+
+        var initial = self.value
+
+        let filtered = filter { value in
+            value != initial
+        }
+
+        filtered.bind { new in
+            initial = self.value
+            output.update(withValue: new)
+        }
+
+        return filtered
     }
 }
