@@ -333,6 +333,39 @@ final class OutputTests: XCTestCase {
         XCTAssertEqual(combined.latest, 10)
     }
 
+    func testIgnoringDuplicates() {
+        let output = Output<Bool>()
+
+        var callCounter = 0
+        var lastValue: Bool?
+
+        output
+            .ignoringDuplicates()
+            .bind { value in
+                XCTAssertNotEqual(lastValue, value)
+                lastValue = value
+                callCounter += 1
+            }
+
+        output.update(withValue: true)
+        output.update(withValue: true)
+        output.update(withValue: true)
+        XCTAssertEqual(callCounter, 1)
+
+        output.update(withValue: false)
+        XCTAssertEqual(callCounter, 2)
+
+        output.update(withValue: true)
+        output.update(withValue: true)
+        output.update(withValue: true)
+        XCTAssertEqual(callCounter, 3)
+
+        output.update(withValue: false)
+        output.update(withValue: false)
+        output.update(withValue: false)
+        XCTAssertEqual(callCounter, 4)
+    }
+
     func testDebug() {
         let printer = PrinterMock()
         let output1 = Output<Bool>(printer: printer)
