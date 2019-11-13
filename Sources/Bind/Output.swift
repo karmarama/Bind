@@ -104,12 +104,11 @@ public extension Output {
     static func combine(outputs: [Output<Value>]) -> Output<[Value]> {
         let returnOutput = Output<[Value]>()
 
-        for (offset, output) in outputs.enumerated() {
+        for output in outputs {
             output.bind { value in
-                var values = outputs.compactMap { $0.value }
+                let values = outputs.compactMap { $0.value }
 
                 if values.count == outputs.count {
-                    values[offset] = value
                     returnOutput.update(withValue: values)
                 }
             }
