@@ -105,7 +105,7 @@ public extension Output {
         let returnOutput = Output<[Value]>()
 
         for output in outputs {
-            output.bind { value in
+            output.bind { _ in
                 let values = outputs.compactMap { $0.value }
 
                 if values.count == outputs.count {
