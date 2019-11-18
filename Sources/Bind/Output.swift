@@ -8,9 +8,9 @@ public class Output<Value>: Unbindable {
     }
 
     private var observers = [Subscription: ((Value) -> Void)]()
-    private var value: Value?
     private var debugIdentifier: String?
     private let printer: Printable
+    var value: Value?
 
     public init(value: Value? = nil, printer: Printable = Printer()) {
         self.value = value
