@@ -10,21 +10,23 @@ public class Output<Value>: Unbindable {
     private var observers = [Subscription: ((Value) -> Void)]()
     private var debugIdentifier: String?
     private let printer: Printable
-    var value: Value?
+    private(set) var value: Value?
 
     public init(value: Value? = nil, printer: Printable = Printer()) {
         self.value = value
         self.printer = printer
     }
 
-    public func update(withValue value: Value) {
+    func update(withValue value: Value, shouldStore: Bool) {
         if let identifier = debugIdentifier {
             printer.print("---")
             printer.print("Will update value for \(identifier) (\(type(of: self))) to \(value)")
             printer.print("To bindings: \(observers)")
         }
 
-        self.value = value
+        if shouldStore {
+            self.value = value
+        }
 
         observers
             .values
@@ -36,6 +38,10 @@ public class Output<Value>: Unbindable {
             printer.print("Did update value for \(identifier) (\(type(of: self))) to \(value)")
             printer.print("To bindings: \(observers)")
         }
+    }
+
+    public func update(withValue value: Value) {
+        update(withValue: value, shouldStore: true)
     }
 
     @discardableResult public func bind(to binder: Binder<Value>) -> Subscription {

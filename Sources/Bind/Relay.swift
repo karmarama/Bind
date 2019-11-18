@@ -2,8 +2,7 @@
 /// does not replay them on future subscribtion events
 public final class Relay<Value>: Output<Value> {
     public override func update(withValue value: Value) {
-        super.update(withValue: value)
-        self.value = nil
+        super.update(withValue: value, shouldStore: false)
     }
 }
 

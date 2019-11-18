@@ -58,4 +58,34 @@ final class RelayTests: XCTestCase {
         output.update(withValue: 1)
         XCTAssertEqual(counter, 2)
     }
+
+    func testRelayIsStatelessMixedValue() {
+        let output = Output<Int>()
+        let relay = Relay<Void>()
+
+        var counter = 0
+
+        Output<(Int, Void)>
+            .combine(output, relay)
+            .bind { _ in
+                counter += 1
+            }
+
+        XCTAssertEqual(counter, 0)
+
+        output.update(withValue: 1)
+        XCTAssertEqual(counter, 0)
+
+        output.update(withValue: 2)
+        XCTAssertEqual(counter, 0)
+
+        relay.update(withValue: ())
+        XCTAssertEqual(counter, 1)
+
+        relay.update(withValue: ())
+        XCTAssertEqual(counter, 2)
+
+        output.update(withValue: 1)
+        XCTAssertEqual(counter, 2)
+    }
 }
