@@ -197,13 +197,13 @@ final class OutputTests: XCTestCase {
                 }
 
         value.update(withValue: .one)
-        XCTAssertEqual(mappedValue.latest, "one")
+        XCTAssertEqual(mappedValue.value, "one")
 
         value.update(withValue: .two)
-        XCTAssertEqual(mappedValue.latest, "two")
+        XCTAssertEqual(mappedValue.value, "two")
 
         value.update(withValue: .one)
-        XCTAssertEqual(mappedValue.latest, "one")
+        XCTAssertEqual(mappedValue.value, "one")
     }
 
     func testFlatMap() {
@@ -227,13 +227,13 @@ final class OutputTests: XCTestCase {
                 }
 
         value.update(withValue: .one)
-        XCTAssertEqual(mappedValue.latest, "one")
+        XCTAssertEqual(mappedValue.value, "one")
 
         value.update(withValue: .two)
-        XCTAssertEqual(mappedValue.latest, "two")
+        XCTAssertEqual(mappedValue.value, "two")
 
         value.update(withValue: .one)
-        XCTAssertEqual(mappedValue.latest, "one")
+        XCTAssertEqual(mappedValue.value, "one")
     }
 
     func testFilter() {
@@ -245,13 +245,13 @@ final class OutputTests: XCTestCase {
             }
 
         value.update(withValue: "first test")
-        XCTAssertEqual(filteredValue.latest, "first test")
+        XCTAssertEqual(filteredValue.value, "first test")
 
         value.update(withValue: "not")
-        XCTAssertEqual(filteredValue.latest, "first test")
+        XCTAssertEqual(filteredValue.value, "first test")
 
         value.update(withValue: "second test")
-        XCTAssertEqual(filteredValue.latest, "second test")
+        XCTAssertEqual(filteredValue.value, "second test")
     }
 
     func testMerge() {
@@ -260,19 +260,19 @@ final class OutputTests: XCTestCase {
 
         let merge = Output.merge(output1, output2)
 
-        XCTAssertNil(merge.latest)
+        XCTAssertNil(merge.value)
 
         output1.update(withValue: 1)
-        XCTAssertEqual(merge.latest, 1)
+        XCTAssertEqual(merge.value, 1)
 
         output1.update(withValue: 2)
-        XCTAssertEqual(merge.latest, 2)
+        XCTAssertEqual(merge.value, 2)
 
         output2.update(withValue: 1)
-        XCTAssertEqual(merge.latest, 1)
+        XCTAssertEqual(merge.value, 1)
 
         output2.update(withValue: 5)
-        XCTAssertEqual(merge.latest, 5)
+        XCTAssertEqual(merge.value, 5)
     }
 
     func testReduceReferenceType() {
@@ -294,7 +294,7 @@ final class OutputTests: XCTestCase {
             initial.update(withValue: value)
         }
 
-        XCTAssertEqual(reduced.latest?.currentString, "12345")
+        XCTAssertEqual(reduced.value?.currentString, "12345")
     }
 
     func testReduceValueType() {
@@ -306,15 +306,15 @@ final class OutputTests: XCTestCase {
             initial.update(withValue: value)
         }
 
-        XCTAssertEqual(reduced.latest, 15)
+        XCTAssertEqual(reduced.value, 15)
     }
 
     func testInitialValueFunctionChain() {
         let initial = Output<Int>().initial(10)
-        XCTAssertEqual(initial.latest, 10)
+        XCTAssertEqual(initial.value, 10)
 
         let alreadyPopulated = Output<Int>(value: 5).initial(10)
-        XCTAssertEqual(alreadyPopulated.latest, 5)
+        XCTAssertEqual(alreadyPopulated.value, 5)
 
         let left = Output(value: 3)
         let right = Output<Int>()
@@ -324,13 +324,13 @@ final class OutputTests: XCTestCase {
             .map(+)
             .initial(20)
 
-        XCTAssertEqual(combined.latest, 20)
+        XCTAssertEqual(combined.value, 20)
 
         left.update(withValue: 4)
-        XCTAssertEqual(combined.latest, 20)
+        XCTAssertEqual(combined.value, 20)
 
         right.update(withValue: 6)
-        XCTAssertEqual(combined.latest, 10)
+        XCTAssertEqual(combined.value, 10)
     }
 
     func testIgnoringDuplicates() {
