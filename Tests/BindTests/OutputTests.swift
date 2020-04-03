@@ -222,6 +222,32 @@ final class OutputTests: XCTestCase {
         XCTAssertTrue(isKnownUniquelyReferenced(&combined))
     }
 
+    func testCombineArrayRetained() {
+        let output1 = Output<String>()
+        var output2: Output<String>? = Output<String>()
+
+        weak var weakOutput2 = output2
+
+        var outputValue: [String]?
+
+        Output<String>
+            .combine(outputs: [output1, output2!])
+            .bind { values in
+                outputValue = values
+            }
+
+        output1.update(withValue: "a")
+        output2?.update(withValue: "b")
+        XCTAssertEqual(outputValue, ["a", "b"])
+
+        output2 = nil
+        weakOutput2?.update(withValue: "c")
+        XCTAssertEqual(outputValue, ["a", "b"])
+
+        output1.update(withValue: "d")
+        XCTAssertEqual(outputValue, ["a", "b"])
+    }
+
     func testMap() {
         //swiftlint:disable:next nesting
         enum TestEnum {

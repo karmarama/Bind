@@ -107,6 +107,13 @@ public protocol Printable {
 
 // MARK: - Functional extensions
 public extension Output {
+    /**
+     `combine(outputs:)` combine all individual values of the output's collection into a single output that emits a
+     collection of those values.
+     - Parameter outputs: The collection of outputs
+     - Returns: An `Output` that returns a collection made of each value of all individual outputs
+     - Note: Receiver does not retain the array of Outputs.
+     */
     static func combine(outputs: [Output<Value>]) -> Output<[Value]> {
         let returnOutput = Output<[Value]>()
         let weaks = outputs.map(Weak.init)
@@ -124,6 +131,12 @@ public extension Output {
         return returnOutput
     }
 
+    /**
+     `combine(output1:,output2)` combines two outputs that emit the same value into one output that emits a
+     tuple of those values.
+     - Returns: An `Output` that emits a tuple with the values of each output
+     - Note: Receiver does not retain output1 and output2.
+     */
     static func combine(_ output1: Output<Value>, _ output2: Output<Value>) -> Output<(Value, Value)> {
         let output = Output<(Value, Value)>()
 
@@ -142,6 +155,12 @@ public extension Output {
         return output
     }
 
+    /**
+     `combine(output1:,output2)` combines two outputs that emit the different values into one output that emits a
+     tuple of those values.
+     - Returns: An `Output` that emits a tuple with the values of each output
+     - Note: Receiver does not retain output1 and output2.
+     */
     static func combine<A, B>(_ output1: Output<A>, _ output2: Output<B>) -> Output<(A, B)> {
         let output = Output<(A, B)>()
 
