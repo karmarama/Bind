@@ -214,6 +214,14 @@ final class OutputTests: XCTestCase {
         XCTAssertTrue(isKnownUniquelyReferenced(&combined))
     }
 
+    func testCombineArrayUniqueReference() {
+        var combined = Output<Bool>
+            .combine(outputs: [Output<Bool>(), Output<Bool>()])
+            .bind { _ in }
+
+        XCTAssertTrue(isKnownUniquelyReferenced(&combined))
+    }
+
     func testMap() {
         //swiftlint:disable:next nesting
         enum TestEnum {

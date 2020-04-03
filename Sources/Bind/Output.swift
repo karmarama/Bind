@@ -109,12 +109,13 @@ public protocol Printable {
 public extension Output {
     static func combine(outputs: [Output<Value>]) -> Output<[Value]> {
         let returnOutput = Output<[Value]>()
+        let weaks = outputs.map(Weak.init)
 
-        for output in outputs {
-            output.bind { _ in
-                let values = outputs.compactMap { $0.value }
+        for output in weaks {
+            output.value?.bind { _ in
+                let values = weaks.compactMap { $0.value }.compactMap { $0.value }
 
-                if values.count == outputs.count {
+                if values.count == weaks.count {
                     returnOutput.update(withValue: values)
                 }
             }

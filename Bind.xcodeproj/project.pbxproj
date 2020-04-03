@@ -115,6 +115,10 @@
 		CDFB4A00364647984BE046C8 /* Bindable+UIPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9A79B13F8E8757056BC49 /* Bindable+UIPageControl.swift */; };
 		D1F3181CEA54A07991FFB490 /* Bindable+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66860ED5F6906D0D3E251DA8 /* Bindable+UISwitch.swift */; };
 		D9A6EABC8BFFC9CFA74B6D13 /* Bindable+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8C0368846079A6AB4E3A8 /* Bindable+NSLayoutConstraint.swift */; };
+		D9E009D8243753CB00ECB69B /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E009D62437539200ECB69B /* Weak.swift */; };
+		D9E009D9243753CE00ECB69B /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E009D62437539200ECB69B /* Weak.swift */; };
+		D9E009DA243753CE00ECB69B /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E009D62437539200ECB69B /* Weak.swift */; };
+		D9E009DB243753CE00ECB69B /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E009D62437539200ECB69B /* Weak.swift */; };
 		DD9CFC9A187ABDA4FB5CF470 /* Bindable+UIPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9A79B13F8E8757056BC49 /* Bindable+UIPageControl.swift */; };
 		DEEB7E76CA6E133DCE59BD82 /* PrinterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F9E946B7E3D2F8E2975BD /* PrinterMock.swift */; };
 		E034DB6AE8ABF274E26E6EA0 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC86018CB4D8A0C09811160 /* Binder.swift */; };
@@ -243,6 +247,7 @@
 		B2F7896317935838D7E5621F /* Bindable+UIButton.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIButton.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		B4A119B08E34E14B858E97F1 /* Bindable+UIView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UIView.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		B5D15DAC79B1AC76785DF873 /* Subscription.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; tabWidth = 4; };
+		D9E009D62437539200ECB69B /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 		DBCF98045AC9F17CD5EF1563 /* BindableMock.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = BindableMock.swift; sourceTree = "<group>"; tabWidth = 4; };
 		E67055753899294DE0EC1937 /* Bindable+UITabBarController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Bindable+UITabBarController.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		F37E541BF3AF26462B57BAF0 /* OutputTests.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = OutputTests.swift; sourceTree = "<group>"; tabWidth = 4; };
@@ -294,6 +299,7 @@
 				32482625AD59C787BA656EA9 /* Relay.swift */,
 				B5D15DAC79B1AC76785DF873 /* Subscription.swift */,
 				3DDA90802ED919DAACC99253 /* Output.swift */,
+				D9E009D62437539200ECB69B /* Weak.swift */,
 			);
 			path = Bind;
 			sourceTree = "<group>";
@@ -678,6 +684,7 @@
 				7E647D9C2C0EF0C371E33400 /* Bindable+UIImageView.swift in Sources */,
 				8916D29F0AEF2B864EED6B53 /* Bindable+UILabel.swift in Sources */,
 				F5D1EB844669593072D92813 /* Bindable+UINavigationItem.swift in Sources */,
+				D9E009DA243753CE00ECB69B /* Weak.swift in Sources */,
 				B8231FC7DF432A62B8B3C94A /* Bindable+UIPageControl.swift in Sources */,
 				3B66674593E48058F99877A3 /* Bindable+UISearchBar.swift in Sources */,
 				324DAEC405E4E996EE0B37E3 /* Bindable+UISegmentedControl.swift in Sources */,
@@ -707,6 +714,7 @@
 				9015E14D3A62FB45789219B3 /* Bindable+UIImageView.swift in Sources */,
 				32E4D37CE5094C0784B059B8 /* Bindable+UILabel.swift in Sources */,
 				3DF39D79269B68404056F9F0 /* Bindable+UINavigationItem.swift in Sources */,
+				D9E009D8243753CB00ECB69B /* Weak.swift in Sources */,
 				195CCADA3A98DB436ED87026 /* Bindable+UIPageControl.swift in Sources */,
 				38A81DFE0B87A791E31218AC /* Bindable+UISearchBar.swift in Sources */,
 				34389F1283B25879C8C6425F /* Bindable+UISegmentedControl.swift in Sources */,
@@ -749,6 +757,7 @@
 				8774D75FE1168D2F1D4CE056 /* Bindable+UIImageView.swift in Sources */,
 				16A74E3909561470C3EABEB3 /* Bindable+UILabel.swift in Sources */,
 				359FE04CC2D3E4397ACD4A77 /* Bindable+UINavigationItem.swift in Sources */,
+				D9E009D9243753CE00ECB69B /* Weak.swift in Sources */,
 				DD9CFC9A187ABDA4FB5CF470 /* Bindable+UIPageControl.swift in Sources */,
 				9A39C0AAE8EEE138E29862EB /* Bindable+UISearchBar.swift in Sources */,
 				51276A88F751D64318F272D8 /* Bindable+UISegmentedControl.swift in Sources */,
@@ -778,6 +787,7 @@
 				9F1C8776143143FE7E7260E2 /* Bindable+UIImageView.swift in Sources */,
 				41B2CFF1147DB924DB2F7238 /* Bindable+UILabel.swift in Sources */,
 				381234946AA8A6C9307AC0C9 /* Bindable+UINavigationItem.swift in Sources */,
+				D9E009DB243753CE00ECB69B /* Weak.swift in Sources */,
 				CDFB4A00364647984BE046C8 /* Bindable+UIPageControl.swift in Sources */,
 				FCA3E90C3CF087E74F120579 /* Bindable+UISearchBar.swift in Sources */,
 				AC6B4BF4F9F90DF28EE1D993 /* Bindable+UISegmentedControl.swift in Sources */,
