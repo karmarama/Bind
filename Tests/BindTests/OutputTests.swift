@@ -177,6 +177,35 @@ final class OutputTests: XCTestCase {
     }
 
     func testCombineNotRetained() {
+        var output1: Output<Bool>? = Output<Bool>()
+        var output2: Output<Bool>? = Output<Bool>()
+
+        weak var weakOutput1 = output1
+        weak var weakOutput2 = output2
+
+        var outputValue1: Bool?
+        var outputValue2: Bool?
+
+        Output<Bool>
+            .combine(output1!, output2!)
+            .bind { value1, value2 in
+                outputValue1 = value1
+                outputValue2 = value2
+            }
+
+        output1 = nil
+        output2 = nil
+
+        weakOutput1?.update(withValue: true)
+        weakOutput2?.update(withValue: true)
+
+        XCTAssertNil(outputValue1)
+        XCTAssertNil(outputValue2)
+        XCTAssertNil(weakOutput1)
+        XCTAssertNil(weakOutput2)
+    }
+
+    func testCombineUniqueReference() {
         var combined = Output<Bool>
             .combine(Output<Bool>(),
                      Output<Bool>())
