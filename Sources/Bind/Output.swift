@@ -107,14 +107,22 @@ public protocol Printable {
 
 // MARK: - Functional extensions
 public extension Output {
+    /**
+     `combine(outputs:)` combine all individual values of the output's collection into a single output that emits a
+     collection of those values.
+     - Parameter outputs: The collection of outputs
+     - Returns: An `Output` that returns a collection made of each value of all individual outputs
+     - Note: Receiver does not retain the array of Outputs.
+     */
     static func combine(outputs: [Output<Value>]) -> Output<[Value]> {
         let returnOutput = Output<[Value]>()
+        let weaks = outputs.map(Weak.init)
 
-        for output in outputs {
-            output.bind { _ in
-                let values = outputs.compactMap { $0.value }
+        for output in weaks {
+            output.value?.bind { _ in
+                let values = weaks.compactMap { $0.value }.compactMap { $0.value }
 
-                if values.count == outputs.count {
+                if values.count == weaks.count {
                     returnOutput.update(withValue: values)
                 }
             }
@@ -123,17 +131,23 @@ public extension Output {
         return returnOutput
     }
 
+    /**
+     `combine(output1:,output2)` combines two outputs that emit the same value into one output that emits a
+     tuple of those values.
+     - Returns: An `Output` that emits a tuple with the values of each output
+     - Note: Receiver does not retain output1 and output2.
+     */
     static func combine(_ output1: Output<Value>, _ output2: Output<Value>) -> Output<(Value, Value)> {
         let output = Output<(Value, Value)>()
 
-        output1.bind { value1 in
-            if let value2 = output2.value {
+        output1.bind { [weak output2] value1 in
+            if let value2 = output2?.value {
                 output.update(withValue: (value1, value2))
             }
         }
 
-        output2.bind { value2 in
-            if let value1 = output1.value {
+        output2.bind { [weak output1] value2 in
+            if let value1 = output1?.value {
                 output.update(withValue: (value1, value2))
             }
         }
@@ -141,17 +155,23 @@ public extension Output {
         return output
     }
 
+    /**
+     `combine(output1:,output2)` combines two outputs that emit the different values into one output that emits a
+     tuple of those values.
+     - Returns: An `Output` that emits a tuple with the values of each output
+     - Note: Receiver does not retain output1 and output2.
+     */
     static func combine<A, B>(_ output1: Output<A>, _ output2: Output<B>) -> Output<(A, B)> {
         let output = Output<(A, B)>()
 
-        output1.bind { value1 in
-            if let value2 = output2.value {
+        output1.bind { [weak output2] value1 in
+            if let value2 = output2?.value {
                 output.update(withValue: (value1, value2))
             }
         }
 
-        output2.bind { value2 in
-            if let value1 = output1.value {
+        output2.bind { [weak output1] value2 in
+            if let value1 = output1?.value {
                 output.update(withValue: (value1, value2))
             }
         }

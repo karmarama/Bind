@@ -176,6 +176,78 @@ final class OutputTests: XCTestCase {
         XCTAssertEqual(outputValue2, "test")
     }
 
+    func testCombineNotRetained() {
+        var output1: Output<Bool>? = Output<Bool>()
+        var output2: Output<Bool>? = Output<Bool>()
+
+        weak var weakOutput1 = output1
+        weak var weakOutput2 = output2
+
+        var outputValue1: Bool?
+        var outputValue2: Bool?
+
+        Output<Bool>
+            .combine(output1!, output2!)
+            .bind { value1, value2 in
+                outputValue1 = value1
+                outputValue2 = value2
+            }
+
+        output1 = nil
+        output2 = nil
+
+        weakOutput1?.update(withValue: true)
+        weakOutput2?.update(withValue: true)
+
+        XCTAssertNil(outputValue1)
+        XCTAssertNil(outputValue2)
+        XCTAssertNil(weakOutput1)
+        XCTAssertNil(weakOutput2)
+    }
+
+    func testCombineUniqueReference() {
+        var combined = Output<Bool>
+            .combine(Output<Bool>(),
+                     Output<Bool>())
+            .bind { _ in }
+
+        XCTAssertTrue(isKnownUniquelyReferenced(&combined))
+    }
+
+    func testCombineArrayUniqueReference() {
+        var combined = Output<Bool>
+            .combine(outputs: [Output<Bool>(), Output<Bool>()])
+            .bind { _ in }
+
+        XCTAssertTrue(isKnownUniquelyReferenced(&combined))
+    }
+
+    func testCombineArrayRetained() {
+        let output1 = Output<String>()
+        var output2: Output<String>? = Output<String>()
+
+        weak var weakOutput2 = output2
+
+        var outputValue: [String]?
+
+        Output<String>
+            .combine(outputs: [output1, output2!])
+            .bind { values in
+                outputValue = values
+            }
+
+        output1.update(withValue: "a")
+        output2?.update(withValue: "b")
+        XCTAssertEqual(outputValue, ["a", "b"])
+
+        output2 = nil
+        weakOutput2?.update(withValue: "c")
+        XCTAssertEqual(outputValue, ["a", "b"])
+
+        output1.update(withValue: "d")
+        XCTAssertEqual(outputValue, ["a", "b"])
+    }
+
     func testMap() {
         //swiftlint:disable:next nesting
         enum TestEnum {
