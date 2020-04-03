@@ -176,6 +176,15 @@ final class OutputTests: XCTestCase {
         XCTAssertEqual(outputValue2, "test")
     }
 
+    func testCombineNotRetained() {
+        var combined = Output<Bool>
+            .combine(Output<Bool>(),
+                     Output<Bool>())
+            .bind { _ in }
+
+        XCTAssertTrue(isKnownUniquelyReferenced(&combined))
+    }
+
     func testMap() {
         //swiftlint:disable:next nesting
         enum TestEnum {

@@ -126,14 +126,14 @@ public extension Output {
     static func combine(_ output1: Output<Value>, _ output2: Output<Value>) -> Output<(Value, Value)> {
         let output = Output<(Value, Value)>()
 
-        output1.bind { value1 in
-            if let value2 = output2.value {
+        output1.bind { [weak output2] value1 in
+            if let value2 = output2?.value {
                 output.update(withValue: (value1, value2))
             }
         }
 
-        output2.bind { value2 in
-            if let value1 = output1.value {
+        output2.bind { [weak output1] value2 in
+            if let value1 = output1?.value {
                 output.update(withValue: (value1, value2))
             }
         }
@@ -144,14 +144,14 @@ public extension Output {
     static func combine<A, B>(_ output1: Output<A>, _ output2: Output<B>) -> Output<(A, B)> {
         let output = Output<(A, B)>()
 
-        output1.bind { value1 in
-            if let value2 = output2.value {
+        output1.bind { [weak output2] value1 in
+            if let value2 = output2?.value {
                 output.update(withValue: (value1, value2))
             }
         }
 
-        output2.bind { value2 in
-            if let value1 = output1.value {
+        output2.bind { [weak output1] value2 in
+            if let value1 = output1?.value {
                 output.update(withValue: (value1, value2))
             }
         }
