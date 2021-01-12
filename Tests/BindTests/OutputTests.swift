@@ -249,7 +249,6 @@ final class OutputTests: XCTestCase {
     }
 
     func testMap() {
-        //swiftlint:disable:next nesting
         enum TestEnum {
             case one
             case two
@@ -279,7 +278,6 @@ final class OutputTests: XCTestCase {
     }
 
     func testFlatMap() {
-        //swiftlint:disable:next nesting
         enum TestEnum {
             case one
             case two
@@ -348,7 +346,7 @@ final class OutputTests: XCTestCase {
     }
 
     func testReduceReferenceType() {
-        class TestObject { //swiftlint:disable:this nesting
+        class TestObject {
             var currentString: String = ""
         }
 
